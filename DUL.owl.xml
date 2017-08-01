@@ -3518,7 +3518,7 @@ On the other hand, in an antiques context, the individual aspects for a specific
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
-Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue</rdfs:comment>
+Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the property hasDataValue.</rdfs:comment>
         <rdfs:comment xml:lang="es">Cualquier región en un espacio dimensional (un espacio dimensional es una región maximal), que se puede utilizar como un valor para una cantidad de una entidad. Por ejemplo, ‘intervalo de tiempo’, ‘región del espacio’, ‘atributo físico’, ‘cantidad’, o ‘atributo social’ son todas subclases de región.
 
 Las regiones no son valores de datos en el sentido ordinario de la representación del conocimiento; para obtener patrones para la modelización de datos, véanse las propiedades: ‘representa valor’ y ‘tiene valor’.</rdfs:comment>
