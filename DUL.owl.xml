@@ -221,7 +221,7 @@ In 3.32, the main module of the ontology has been translated into Spanish.</owl:
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialAgent"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
-        <rdfs:comment xml:lang="es">La relación inversa de actúa para.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La relación inversa de &apos;actúa para&apos;.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation holding between a PhysicalAgent and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;, e.g. a university can be acted for by a department, which is acted for by physical agents. AKA isActedBy</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">acts through</rdfs:label>
