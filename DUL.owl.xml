@@ -2180,7 +2180,7 @@ Los cinco enfoques responden a diferentes requisitos. Por ejemplo, un valor simp
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datatype property that encodes values from xsd:date for a TimeInterval; a same TimeInterval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una propiedad de datos que codifica valores para un xsd:date para un ‘intervalo de tiempo’; el mismo ‘intervalo de tiempo’ puede tener más de un valor xsd:date: fecha de comienzo, fecha de fin, fecha en la que ocurre el intervalo, así como fechas expresadas en diferentes formatos: xsd:Year, xsd:dateTime, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una propiedad de datos que codifica valores para un xsd:date para un ‘intervalo de tiempo’; el mismo ‘intervalo de tiempo’ puede tener más de un valor xsd:date: fecha de comienzo, fecha de fin, fecha en la que ocurre el intervalo, así como fechas expresadas en diferentes formatos: xsd:Year, xsd:dateTime, etc. AAA</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
         <rdfs:label xml:lang="en">has interval date</rdfs:label>
         <rdfs:label xml:lang="it">intervallo ha data</rdfs:label>
