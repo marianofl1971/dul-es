@@ -7,6 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl">
+        <rdfs:comment xml:lang="en">License Creative Commons CC-BY-SA</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.31</owl:versionInfo>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOLCE+DnS Ultralite</rdfs:label>
         <rdfs:comment xml:lang="es">The DOLCE+DnS Ultralite ontology.
@@ -45,6 +46,7 @@ Los principales aspectos en los cuales DOLCE+DnS Ultralite se diferencia de DOLC
 El resultado final es una ontología general, ligera y fácil de aplicar tanto para contextos físicos como sociales.
 
 Se han diseñado varias extensiones de DOLCE+DnS Ultralite; véase, por ejemplo, la extensión para objetos de información: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl,para sistemas: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl,  para planes: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl, para el dominio legal: http://www.ontologydesignpatterns.org/ont/dul/CLO/CoreLegal.owl, y para el dominio léxico y semiótico: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl; etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Licencia Creative Commons CC-BY-SA</rdfs:comment>
         <owl:versionInfo xml:lang="es">En 3.2, los enlaces entre las instancias de ‘región’ o ‘parámetro’ y sus tipos de datos han sido revisados y hecho más potentes, con el propósito de respaldar patrones de diseño para valores de datos que se modelan en OWL 1.0.
 También, los nombres de las propiedades relacionadas han sido cambiados para hacerlos más intuitivos. Asimismo, se ha añadido un campo de comentario de gran tamaño a la propiedad de objeto ‘expresa’, con el propósito de clarificar algunas cuestiones sobre sus muchas interpretaciones.
 
