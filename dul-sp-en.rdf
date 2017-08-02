@@ -106,8 +106,8 @@ En 3.30, se han completado algunos dominios y rangos (anteriormente, owl:Thing, 
 
 En 3.31, se ha añadido una restricción a ‘cualidad’ y otra a ‘región’ para asegurar que la restricción original de DOLCE de cualidades está siempre asociada con una región, y viceversa. Estos axiomas no excluyen, sin embargo, una aplicabilidad directa de cualidades o regiones obre cualquier otra entidad.
 
-En 3.32, el módulo principal de la ontología se ha traducido al español.</owl:versionInfo>
-        <owl:versionInfo xml:lang="es">In 3.2, the links between instances of Region or Parameter, and datatypes have been revised and made more powerful, in order to support efficient design patterns for data value modelling in OWL1.0.
+En 3.4, el módulo principal de la ontología se ha traducido al español.</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">In 3.2, the links between instances of Region or Parameter, and datatypes have been revised and made more powerful, in order to support efficient design patterns for data value modelling in OWL1.0.
 Also, the names of the related properties have been changed in order to make them more intuitive.
 Furthermore, a large comment field has been added to the &apos;expresses&apos; object property, in order to clarify some issues about the many interpretations.
 In 3.3, the relation between regions, parameters, and datatypes has been still improved.
@@ -138,7 +138,7 @@ In 3.28, broadened the universe of pre-/post-conditions to give room to events a
 In 3.29, added some properties to support DBpedia alignment: sameSettingAs (situational analogous to coparticipation), including relations originating e.g. from sharing kinship, ownership, or roleplaying situations.
 In 3.30, completed some domains and ranges (formerly owl:Thing, now dul:Entity), and added axiom: Organism subClassOf PhysicalAgent.
 In 3.31, added a restriction to Quality and one to Region in order to ensure the original DOLCE constraint of qualities being always associated with a region, and vice versa. These axioms do not however exclude a direct applicability of qualities or regions to any other entity.
-In 3.32, the main module of the ontology has been translated into Spanish.</owl:versionInfo>
+In 3.4 the main module of the ontology has been translated into Spanish.</owl:versionInfo>
     </owl:Ontology>
     
 
