@@ -1,0 +1,43 @@
+Evento
+
+Cualquier proceso, suceso o estado físico, social o mental.
+
+Los eventos se pueden clasificar de diferentes maneras, posiblemente basadas en “aspecto” (por ejemplo, de estado, continuo, consecución, etc.), en agentividad (por ejemplo, intencional, natural, etc.), o en participantes típicos (por ejemplo, humanos, físicos, abstractos, comida, etc.).
+
+Aquí no se toma ninguna dirección especial, y a continuación se explica por qué: los eventos están relacionados con situaciones observables, y pueden admitir diferentes puntos de vista al mismo tiempo.
+
+Si se tiene que sugerir una posición a toda costa, la clasificación de eventos basada en los participantes parece la más estable y apropiada para muchos problemas de modelización.
+
+(1) Puntos de vista aspectuales alternativos
+
+Considérese un mismo evento ‘erosión de las rocas en la cuenta del río Segura’: se puede conceptualizar como una realización (lo que ha provocado que tenga lugar cierto estado), como una consecución (el estado resultante de una realización anterior), como un suceso puntual (si comprimimos el intervalo de tiempo de la erosión en un punto de tiempo), o como una transición (algo que ha cambiado de un estado a otro diferente).
+En el caso de la erosión, podríamos, por tanto, tener buenas razones para cambiar de un aspecto a otro: (a) enfocado hacia la causa, (b) enfocado hacia el efecto, (c) condensación histórica, (d) transición (causalidad).
+
+Las diferentes perspectivas se refieren al mismo evento, pero son todavía diferentes: ¿cómo vivir con semejante paradoja? Una solución típica, por ejemplo, en lingüística (consúltese lo escrito por Levin sobre clases aspectuales) y en DOLCE Full (consúltese la axiomatización del informe D18 del proyecto WonderWeb) es clasificar eventos basándose en diferencias aspectuales. Pero esta solución crearía diferentes entidades para el mismo evento, cuando la diferencia está sólo basada en la actitud de quien realiza la modelización.
+
+Una solución alternativa es la aquí aplicada, que explota la noción de ‘situación’ (observable); una ‘situación’ es una perspectiva, consistente con una ‘descripción’, que puede ser observada, de un conjunto de entidades. Se puede ver también como un ‘contexto relacional’ creado por un observador sobre la base de un "marco". Por tanto, una ‘situación’ permite crear un contexto donde cada vista particular puede tener una identidad propia, mientras que el ‘evento’ preserva su propia identidad.
+
+Por ejemplo, ‘erosión como realización’ es una situación donde la erosión de las rocas se observa como un proceso que conduce a una cierta consecución: las condiciones (roles, parámetros) que sugieren tal perspectiva se establecen en una ‘descripción’, que actúa como una “teoría de consecuciones”. Del mismo modo, 'erosión como transición' es una 'situación' donde la erosión de las rocas se observa como un evento que ha cambiado un estado en otro: las condiciones para tal interpretación se establecen en una 'descripción' diferente, que actúa como una "teoría de transiciones de estado". Hay que tener en cuenta que, en ningún caso, el evento real es cambiado o enriquecido en sus partes por la vista aspectual.
+
+(2) Vistas de intencionalidad alternativa
+
+De forma análoga a las vistas aspectuales, se pueden proporcionar varias vistas intencionales para un mismo 'evento'. Por ejemplo, uno puede investigar si una avalancha ha sido causada por fuerzas naturales inmediatas, o si hay algún indicio de un esfuerzo intencional para activar esas fuerzas naturales.
+
+También en este caso, el 'evento' como tal no tiene identidades diferentes, mientras que el análisis causal genera situaciones con diferentes identidades, de acuerdo con qué 'descripción' se toma para interpretar el 'evento'.
+
+Por otra parte, si las acciones posibles de un 'agente' que causa el inicio de una avalancha se toman como partes del 'evento', entonces éste hace que la identidad cambie, porque le estamos añadiendo una parte.
+
+Por lo tanto, si la intencionalidad es, o no, un criterio para clasificar eventos depende de si un diseñador de ontologías quiere considerar la causalidad como una dimensión relevante para la identidad de los 'eventos'.
+
+(3) Vistas de participante alternativo
+
+Un caso ligeramente diferente se da cuando consideramos los participantes básicos en un 'evento'. En este caso, la identidad del 'evento' se ve afectada por los objetos participantes, porque depende de ellos. Por ejemplo, si la nieve, las pendientes de las montañas, el viento, las olas, etc. se consideran como participantes básicos de una avalancha, o si queremos añadir el agua, los agentes humanos, etc., la identidad de una avalancha será distinta. 
+
+En cualquier caso, este enfoque de la clasificación de eventos se basa en las decisiones del diseñador, y refleja de forma más precisa las clasificaciones léxicas o de sentido común (véanse, por ejemplo, los "super sentidos" de WordNet para synsets de verbos).
+
+En última instancia, esta discusión no tiene fin, porque el realista mantendrá la idea de que los eventos en realidad no cambian por la forma en que los describimos, mientras que los constructivistas mantendrán la defensa de la idea de que, sea cual sea la "realidad verdadera", no se puede modelar sin la carga teórica de cómo la observamos y la describimos.
+
+Ambas posiciones son en principio válidas, pero, si se toman con demasiada radicalidad, se centran en cuestiones que son sólo parcialmente relevantes para las ontologías computacionales, las cuales tienen como propósito ayudar a los expertos del dominio a representar lo que que quieren conceptualizar: una cierta porción de la realidad de acuerdo con sus propias ideas.
+
+Por esta razón, en esta ontología, se permiten tanto los eventos como las sitaciones, junto con descripciones, para codificar las necesidades de modelización, independientemente de la posición (en caso de que la haya) elegida por el diseñador.
+
