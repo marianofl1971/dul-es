@@ -2,9 +2,10 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl" uri="DOLCE-Lite.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1501763781213" name="http://w3id.org/top-level/dul-sp-en.rdf" uri="documentación/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1501763781213" name="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl" uri="DOLCE-Lite.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1501763781213" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="OnToology/dul-sp-en.rdf/documentation/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1501763781213" name="https://w3id.org/def/dul-es" uri="dul-sp-en.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501883690842" name="http://w3id.org/top-level/dul-sp-en.rdf" uri="taller/documentación/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1501883690842" name="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl" uri="DOLCE-Lite.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1501883690842" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="taller/OnToology/dul-sp-en.rdf/documentation/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1501883690842" name="https://w3id.org/def/dul-es" uri="dul-sp-en.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1501883690842" name="shadowed:https://w3id.org/def/dul-es" uri="OnToology/dul-sp-en.rdf/documentation/ontology.xml"/>
     </group>
 </catalog>
