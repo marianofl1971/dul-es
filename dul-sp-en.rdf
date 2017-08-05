@@ -25,7 +25,7 @@ Los principales aspectos en los cuales DOLCE+DnS Ultralite se diferencia de DOLC
 - La axiomatización hace uso de contructos más simples que los de DOLCE Lite-Plus.
 - La arquitectura de la ontología está basada en patrones, llamados patrones de contenido de diseño de ontologías, que pueden ser aplicados independientemente en el diseño de ontologías de dominio (cf. http://www.ontologydesignpatterns.org). Esto significa que DOLCE+DnS Ultralite también está disponible por módulos, Si se necesitan muchos módulos en un mismo proyecto de ontologías, es, en cualquier caso, útil utilizar esta versión integrada.
 
-El resultado final es una ontología general, ligera y fácil de aplicar tanto para contextos físicos como sociales.
+El resultado final es una ontología general, ligera y fácil de aplicar tanto para contextos físicos como sociales.xx
 
 Se han diseñado varias extensiones de DOLCE+DnS Ultralite; véase, por ejemplo, la extensión para objetos de información: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl,para sistemas: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl,  para planes: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl,, y para el dominio léxico y semiótico: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl, etc.</rdfs:comment>
         <rdfs:comment xml:lang="en">The DOLCE+DnS Ultralite ontology.
