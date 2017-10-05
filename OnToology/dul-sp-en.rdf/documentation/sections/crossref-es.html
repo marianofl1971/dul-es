@@ -344,7 +344,7 @@ Comentario adicional: un agente computacional se puede considerar como un ‘age
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#CollectiveAgent</p>
       <div class="comment">
-         <span class="markdown">Un ‘agente social’ que ‘actúa por’ agentes que son (y actúan como) miembros de un ‘colectivo’. Un agente colectivo puede tener roles que son también roles de otros agentes.
+         <span class="markdown">Un ‘agente social’ que ‘actúa por’ agentes que son (y actúan como) miembros de un ‘colectivo’. Un agente colectivo puede tener papeles que son también papeles de otros agentes.
 
 Por ejemplo, en sociología, una ‘acción de grupo’ es la situación en que un número de personas (que resultan ser miembros de un colectivo) en un área dada, se comportan de una forma coordinada para alcanzar una meta (normalmente común). El ‘agente’ en tal ‘situación’ no es único, sino un ‘agente colectivo’ (un grupo). Esto se puede generalizar a la noción de movimiento social, que asume una ‘comunidad’ grande o incluso una ‘sociedad’ entera como agente.
 
@@ -1616,7 +1616,7 @@ Las diferentes perspectivas se refieren al mismo evento, pero son todavía difer
 
 Una solución alternativa es la aquí aplicada, que explota la noción de ‘situación’ (observable); una ‘situación’ es una perspectiva, consistente con una ‘descripción’, que puede ser observada, de un conjunto de entidades. Se puede ver también como un ‘contexto relacional’ creado por un observador sobre la base de un "marco". Por tanto, una ‘situación’ permite crear un contexto donde cada vista particular puede tener una identidad propia, mientras que el ‘evento’ preserva su propia identidad.
 
-Por ejemplo, ‘erosión como realización’ es una situación donde la erosión de las rocas se observa como un proceso que conduce a una cierta consecución: las condiciones (roles, parámetros) que sugieren tal perspectiva se establecen en una ‘descripción’, que actúa como una “teoría de consecuciones”. Del mismo modo, 'erosión como transición' es una 'situación' donde la erosión de las rocas se observa como un evento que ha cambiado un estado en otro: las condiciones para tal interpretación se establecen en una 'descripción' diferente, que actúa como una "teoría de transiciones de estado". Hay que tener en cuenta que, en ningún caso, el evento real es cambiado o enriquecido en sus partes por la vista aspectual.
+Por ejemplo, ‘erosión como realización’ es una situación donde la erosión de las rocas se observa como un proceso que conduce a una cierta consecución: las condiciones (papelespapeles, parámetros) que sugieren tal perspectiva se establecen en una ‘descripción’, que actúa como una “teoría de consecuciones”. Del mismo modo, 'erosión como transición' es una 'situación' donde la erosión de las rocas se observa como un evento que ha cambiado un estado en otro: las condiciones para tal interpretación se establecen en una 'descripción' diferente, que actúa como una "teoría de transiciones de estado". Hay que tener en cuenta que, en ningún caso, el evento real es cambiado o enriquecido en sus partes por la vista aspectual.
 
 (2) Vistas de intencionalidad alternativa
 
@@ -1720,7 +1720,7 @@ Por esta razón, en esta ontología, se permiten tanto los eventos como las sita
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#Workflow</p>
       <div class="comment">
-         <span class="markdown">Un ‘plan’ que define ‘role’(s), ‘tarea’(s), y una estructura para las tareas a ser ejecutadas, normalmente proporcionando soporte al trabajo de una ‘organización’.</span>
+         <span class="markdown">Un ‘plan’ que define papeles, tareas, y una estructura para las tareas a ser ejecutadas, normalmente proporcionando soporte al trabajo de una ‘organización’.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -2815,7 +2815,7 @@ Véase la clase ‘evento’ para algunas reflexiones sobre clasificación de ev
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#Project</p>
       <div class="comment">
-         <span class="markdown">Un ‘plan’ que define papeles, tareas, y una estructura específica para las tareas a ser ejecutadas en relación con las metas a ser alcanzadas, a fin de alcanzar la meta principal del proyecto. En otras palabras, un proyecto es un plan con una estructura de submetas y múltiples roles y tareas.</span>
+         <span class="markdown">Un ‘plan’ que define papeles, tareas, y una estructura específica para las tareas a ser ejecutadas en relación con las metas a ser alcanzadas, a fin de alcanzar la meta principal del proyecto. En otras palabras, un proyecto es un plan con una estructura de submetas y múltiples papeles y tareas.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3296,7 +3296,11 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#Theory</p>
       <div class="comment">
-         <span class="markdown">Una ‘teoría’ es una ‘descripción’ que representa</span>
+         <span class="markdown">
+Una ‘teoría’ es una ‘descripción’ que representa un conjunto de supuestos para describir algo, normalmente general. Se pueden incluir aquí las teorías científicas, filosóficas y de sentido común.
+
+Esta clase también se puede utilizar para actuar como “materializaciones naturalizadas” de teorías lógicas (por supuesto, serán necesariamente incompletas en este caso, porque las entidades de segundo orden están representadas como entidades de primer orden).         
+         </span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3369,7 +3373,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#Transition</p>
       <div class="comment">
-         <span class="markdown">Una transición es una ‘situación’ que crea un contexto para tres ‘intervalo(s) de tiempo’, dos ‘situación’(es), un ‘evento’, un ‘proceso’, y al menos un ‘objeto’: el ‘evento’ se observa como la causa para la transición, una ‘situación’ es el estado antes de la transición, la segunda ‘situación’ es el estado después de la transición, el ‘proceso’ es la invariante bajo algunas transiciones diferentes (incluyendo la que se representa aquí), in la cual se sitúa al menos un ‘objeto’. Finalmente, los intervalos de tiempo posicionan las situaciones y el evento de la transición en el tiempo. Esta clase de situaciones codifica parcialmente la ontología subyacente en las álgebras de ingeniería para procesos, por ejemplo, las redes de Petri. Una representación completa de la ontología de transición está fuera de la expresividad de OWL, porque necesitaríamos restricciones de cardinalidad cualificadas, co-referencia, equivalencia de propiedades, y composición de propiedades.</span>
+         <span class="markdown">Una transición es una ‘situación’ que crea un contexto para tres ‘intervalo(s) de tiempo’, dos ‘situación’(es), un ‘evento’, un ‘proceso’, y al menos un ‘objeto’: el ‘evento’ se observa como la causa para la transición, una ‘situación’ es el estado antes de la transición, la segunda ‘situación’ es el estado después de la transición, el ‘proceso’ es la invariante bajo algunas transiciones diferentes (incluyendo la que se representa aquí), en la cual se sitúa al menos un ‘objeto’. Finalmente, los intervalos de tiempo posicionan las situaciones y el evento de la transición en el tiempo. Esta clase de situaciones codifica parcialmente la ontología subyacente en las álgebras de ingeniería para procesos, por ejemplo, las redes de Petri.  </span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3423,7 +3427,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#UnitOfMeasure</p>
       <div class="comment">
-         <span class="markdown">Las unidades de medida se conceptualizan aquí como parámetros sobre regiones, que pueden tomar evaluados cómo valores de tipos de datos.</span>
+         <span class="markdown">Las unidades de medida se conceptualizan aquí como parámetros sobre regiones, que pueden ser evaluados como valores de tipos de datos.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3826,7 +3830,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#actsFor</p>
       <div class="comment">
-         <span class="markdown">La relación que tiene lugar entre cualquier ‘agente’, y un ‘agente social’. En principio, un ‘agente social’ requiere al menos un ‘agente físico’ para actuar, pero esta dependencia puede ser delegada, por ejemplo, un departamento puede actuar para una universidad y, a su vez, un agente físico puede actuar para el departamento.</span>
+         <span class="markdown">La relación que tiene lugar entre cualquier ‘agente’ y un ‘agente social’. En principio, un ‘agente social’ requiere al menos un ‘agente físico’ para actuar, pero esta dependencia puede ser delegada, así, por ejemplo, un departamento puede actuar para una universidad y, a su vez, un agente físico puede actuar para el departamento.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3972,7 +3976,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#characterizes</p>
       <div class="comment">
-         <span class="markdown">Una relación entre conceptos y colecciones, donde un ‘concepto’ se dice que caracteriza una ‘colección’. Corresponde a un enlace entre representaciones extensionales e intensionales (reificadas) de un_subconjunto_propio_de_una clase (reificada). Es diferente de ‘cubre’, porque se refiere a una interpretación de la clas entera reificada. Por ejemplo, la colección de saxofones de época está caracterizada por el ‘concepto’ Hecho a Mano, mientras que está cubierta por el ‘concepto’ Saxofón, con el parámetro De Época.</span>
+         <span class="markdown">Una relación entre conceptos y colecciones, donde un ‘concepto’ se dice que caracteriza una ‘colección’. Corresponde a un enlace entre representaciones extensionales e intensionales (reificadas) de un_subconjunto_propio_de_una clase (reificada). Es diferente de ‘cubre’, porque se refiere a una interpretación de la clase entera reificada. Por ejemplo, la colección de saxofones de época está caracterizada por el ‘concepto’ Hecho a Mano, mientras que está cubierta por el ‘concepto’ Saxofón, con el parámetro De Época.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -4013,7 +4017,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#classifies</p>
       <div class="comment">
-         <span class="markdown">Una relación entre un ‘concepto’ y una ‘entidad’, por ejemplo, el ‘role’ estudiante clasifica una perosna.</span>
+         <span class="markdown">Una relación entre un ‘concepto’ y una ‘entidad’, por ejemplo, el ‘papel’ estudiante clasifica una persona.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -4106,7 +4110,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#conceptualizes</p>
       <div class="comment">
-         <span class="markdown">Una relación que establece que un ‘agente’ está representando internamente un ‘objeto social’: situaciones, descripciones, conceptos, etc. Por ejemplo, “John cree en la teoría de la conspiración”; “Niels Bohr creó la metáfora del sistema solar para la teoría atómica”; “Diego asume que los cisnes son blancos”; “los miembros del cuerpo especial comparte el plan de ataque”. Se pueden distinguir las conceptualizaciones de diferentes maneras, primariamente basadas en el tipo de ‘objeto social’ que es conceptualizado. Las descripciones y los conceptos pueden ser “asumidos”; las situaciones pueden ser “creíadas” o “conocidas”, los planes puede ser “adoptados”, etc. (Véase la ontología  http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl).</span>
+         <span class="markdown">Una relación que establece que un ‘agente’ está representando internamente un ‘objeto social’: situaciones, descripciones, conceptos, etc. Por ejemplo, “John cree en la teoría de la conspiración”; “Niels Bohr creó la metáfora del sistema solar para la teoría atómica”; “Diego asume que los cisnes son blancos”; “los miembros del cuerpo especial comparten el plan de ataque”. Se pueden distinguir las conceptualizaciones de diferentes maneras, primariamente basadas en el tipo de ‘objeto social’ que es conceptualizado. Las descripciones y los conceptos pueden ser “asumidos”; las situaciones pueden ser “creíadas” o “conocidas”, los planes puede ser “adoptados”, etc. (Véase la ontología  http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl).</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -4188,7 +4192,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#defines</p>
       <div class="comment">
-         <span class="markdown">Una relación entre una ‘descripción’ y un ‘concepto’, por ejemplo, un ‘flujo de trabajo’ para una ‘organización’ gubernamental define el role “policía”, o la Ley de Tráfico de España define el role Vehículo.</span>
+         <span class="markdown">Una relación entre una ‘descripción’ y un ‘concepto’, por ejemplo, un ‘flujo de trabajo’ para una ‘organización’ gubernamental define el papel “policía”, o la Ley de Tráfico de España define el papel Vehículo.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -4235,7 +4239,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#definesRole</p>
       <div class="comment">
-         <span class="markdown">Una relación entre una descripción y un role, por ejemplo, la receta para un pastel define el papel “ingrediente”.</span>
+         <span class="markdown">Una relación entre una descripción y un papel, por ejemplo, la receta para un pastel define el papel “ingrediente”.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -4317,7 +4321,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#describes</p>
       <div class="comment">
-         <span class="markdown">Una relación entre una ‘descripción’ y una ‘entidad’: una ‘descripción’ proporciona unidad a una ‘colección’ de partes (los componentes), o constituyentes, asignando un role a cada uno de ellos en el contexto de un ‘objeto’ en su totalidad (el sistema). A una misma entidad se le pueden dar diferentes descripciones, por ejemplo, a una vieja cuna se le puede dar una ‘descripción’ que unifica basada en el diseño estético original, la funcionalidad para la que fue construida, o una nueva funcionalidad estética en la que se pude utilizar como maceta con flores.</span>
+         <span class="markdown">Una relación entre una ‘descripción’ y una ‘entidad’: una ‘descripción’ proporciona unidad a una ‘colección’ de partes (los componentes), o constituyentes, asignando un papel a cada uno de ellos en el contexto de un ‘objeto’ en su totalidad (el sistema). A una misma entidad se le pueden dar diferentes descripciones, por ejemplo, a una vieja cuna se le puede dar una ‘descripción’ que unifica basada en el diseño estético original, la funcionalidad para la que fue construida, o una nueva funcionalidad estética en la que se pude utilizar como maceta con flores.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>

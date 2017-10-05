@@ -237,7 +237,7 @@ In 3.4 the main module of the ontology has been translated into Spanish.</owl:ve
         <owl:inverseOf rdf:resource="https://w3id.org/def/dul-es#actsThrough"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#SocialAgent"/>
-        <rdfs:comment xml:lang="es">La relación que tiene lugar entre cualquier ‘agente’, y un ‘agente social’. En principio, un ‘agente social’ requiere al menos un ‘agente físico’ para actuar, pero esta dependencia puede ser delegada, por ejemplo, un departamento puede actuar para una universidad y, a su vez, un agente físico puede actuar para el departamento.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La relación que tiene lugar entre cualquier ‘agente’ y un ‘agente social’. En principio, un ‘agente social’ requiere al menos un ‘agente físico’ para actuar, pero esta dependencia puede ser delegada, así, por ejemplo, un departamento puede actuar para una universidad y, a su vez, un agente físico puede actuar para el departamento.</rdfs:comment>
         <rdfs:comment xml:lang="en">The relation holding between any Agent, and a SocialAgent. In principle, a SocialAgent requires at least one PhysicalAgent in order to act, but this dependency can be &apos;delegated&apos;; e.g. a university can be acted for by a department, which on its turm is acted for by physical agents.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">acts for</rdfs:label>
@@ -289,7 +289,7 @@ In 3.4 the main module of the ontology has been translated into Spanish.</owl:ve
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Collection"/>
         <rdfs:comment xml:lang="en">A relation between concepts and collections, where a Concept is said to characterize a Collection; it corresponds to a link between the (reified) intensional and extensional interpretations of a _proper subset of_ a (reified) class. This is different from covers, because it refers to an interpretation the entire reified class.
 E.g. the collection of vintage saxophones is characterized by the Concept &apos;manufactured by hand&apos;, while it gets covered by the Concept &apos;Saxophone&apos; with the Parameter &apos;Vintage&apos;.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre conceptos y colecciones, donde un ‘concepto’ se dice que caracteriza una ‘colección’. Corresponde a un enlace entre representaciones extensionales e intensionales (reificadas) de un_subconjunto_propio_de_una clase (reificada). Es diferente de ‘cubre’, porque se refiere a una interpretación de la clas entera reificada. Por ejemplo, la colección de saxofones de época está caracterizada por el ‘concepto’ Hecho a Mano, mientras que está cubierta por el ‘concepto’ Saxofón, con el parámetro De Época.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre conceptos y colecciones, donde un ‘concepto’ se dice que caracteriza una ‘colección’. Corresponde a un enlace entre representaciones extensionales e intensionales (reificadas) de un_subconjunto_propio_de_una clase (reificada). Es diferente de ‘cubre’, porque se refiere a una interpretación de la clase entera reificada. Por ejemplo, la colección de saxofones de época está caracterizada por el ‘concepto’ Hecho a Mano, mientras que está cubierta por el ‘concepto’ Saxofón, con el parámetro De Época.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">caracteriza</rdfs:label>
         <rdfs:label xml:lang="it">caratterizza</rdfs:label>
@@ -306,7 +306,7 @@ E.g. the collection of vintage saxophones is characterized by the Concept &apos;
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Concept"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:comment xml:lang="en">A relation between a Concept and an Entity, e.g. the Role &apos;student&apos; classifies a Person &apos;John&apos;.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre un ‘concepto’ y una ‘entidad’, por ejemplo, el ‘role’ estudiante clasifica una perosna.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre un ‘concepto’ y una ‘entidad’, por ejemplo, el ‘papel’ estudiante clasifica una persona.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">clasifica</rdfs:label>
         <rdfs:label xml:lang="it">classifica</rdfs:label>
@@ -324,7 +324,7 @@ E.g. the collection of vintage saxophones is characterized by the Concept &apos;
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#SocialObject"/>
         <rdfs:comment xml:lang="en">A relation stating that an Agent is internally representing a SocialObject: situations, descriptions, concepts, etc. E.g., &apos;John believes in the conspiracy theory&apos;; &apos;Niels Bohr created the solar-system metaphor for the atomic theory&apos;; &apos;Jacques assumes all swans are white&apos;; &apos;the task force members share the attack plan&apos;.
 Conceptualizations can be distinguished into different forms, primarily based on the type of SocialObject that is conceptualized. Descriptions and concepts can be &apos;assumed&apos;, situations can be &apos;believed&apos; or &apos;known&apos;, plans can be &apos;adopted&apos;, etc. (see ontology: http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación que establece que un ‘agente’ está representando internamente un ‘objeto social’: situaciones, descripciones, conceptos, etc. Por ejemplo, “John cree en la teoría de la conspiración”; “Niels Bohr creó la metáfora del sistema solar para la teoría atómica”; “Diego asume que los cisnes son blancos”; “los miembros del cuerpo especial comparte el plan de ataque”. Se pueden distinguir las conceptualizaciones de diferentes maneras, primariamente basadas en el tipo de ‘objeto social’ que es conceptualizado. Las descripciones y los conceptos pueden ser “asumidos”; las situaciones pueden ser “creíadas” o “conocidas”, los planes puede ser “adoptados”, etc. (Véase la ontología  http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación que establece que un ‘agente’ está representando internamente un ‘objeto social’: situaciones, descripciones, conceptos, etc. Por ejemplo, “John cree en la teoría de la conspiración”; “Niels Bohr creó la metáfora del sistema solar para la teoría atómica”; “Diego asume que los cisnes son blancos”; “los miembros del cuerpo especial comparten el plan de ataque”. Se pueden distinguir las conceptualizaciones de diferentes maneras, primariamente basadas en el tipo de ‘objeto social’ que es conceptualizado. Las descripciones y los conceptos pueden ser “asumidos”; las situaciones pueden ser “creíadas” o “conocidas”, los planes puede ser “adoptados”, etc. (Véase la ontología  http://www.ontologydesignpatterns.org/ont/dul/Conceptualization.owl).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">conceptualiza</rdfs:label>
         <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
@@ -394,7 +394,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Description"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Concept"/>
         <rdfs:comment xml:lang="en">A relation between a Description and a Concept, e.g. a Workflow for a governmental Organization defines the Role &apos;officer&apos;, or &apos;the Italian Traffic Law defines the role Vehicle&apos;.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre una ‘descripción’ y un ‘concepto’, por ejemplo, un ‘flujo de trabajo’ para una ‘organización’ gubernamental define el role “policía”, o la Ley de Tráfico de España define el role Vehículo.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre una ‘descripción’ y un ‘concepto’, por ejemplo, un ‘flujo de trabajo’ para una ‘organización’ gubernamental define el papel “policía”, o la Ley de Tráfico de España define el papel Vehículo.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">define</rdfs:label>
         <rdfs:label xml:lang="en">defines</rdfs:label>
@@ -411,7 +411,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Description"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Role"/>
         <rdfs:comment xml:lang="en">A relation between a description and a role, e.g. the recipe for a cake defines the role &apos;ingredient&apos;.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre una descripción y un role, por ejemplo, la receta para un pastel define el papel “ingrediente”.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre una descripción y un papel, por ejemplo, la receta para un pastel define el papel “ingrediente”.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">define papel</rdfs:label>
         <rdfs:label xml:lang="en">defines role</rdfs:label>
@@ -446,7 +446,7 @@ E.g. the collection of vintage saxophones is covered by the Concept &apos;Saxoph
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:comment xml:lang="en">The relation between a Description and an Entity : a Description gives a unity to a Collection of parts (the components), or constituents, by assigning a Role to each of them in the context of a whole Object (the system).
 A same Entity can be given different descriptions, for example, an old cradle can be given a unifying Description based on the original aesthetic design, the functionality it was built for, or a new aesthetic functionality in which it can be used as a flower pot.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre una ‘descripción’ y una ‘entidad’: una ‘descripción’ proporciona unidad a una ‘colección’ de partes (los componentes), o constituyentes, asignando un role a cada uno de ellos en el contexto de un ‘objeto’ en su totalidad (el sistema). A una misma entidad se le pueden dar diferentes descripciones, por ejemplo, a una vieja cuna se le puede dar una ‘descripción’ que unifica basada en el diseño estético original, la funcionalidad para la que fue construida, o una nueva funcionalidad estética en la que se pude utilizar como maceta con flores.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre una ‘descripción’ y una ‘entidad’: una ‘descripción’ proporciona unidad a una ‘colección’ de partes (los componentes), o constituyentes, asignando un papel a cada uno de ellos en el contexto de un ‘objeto’ en su totalidad (el sistema). A una misma entidad se le pueden dar diferentes descripciones, por ejemplo, a una vieja cuna se le puede dar una ‘descripción’ que unifica basada en el diseño estético original, la funcionalidad para la que fue construida, o una nueva funcionalidad estética en la que se pude utilizar como maceta con flores.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">describe</rdfs:label>
         <rdfs:label xml:lang="en">describes</rdfs:label>
@@ -2491,7 +2491,7 @@ Collectives, facon de parler, can act as agents, although they are not assumed h
         <rdfs:comment xml:lang="en">A SocialAgent that is actedBy agents that are (and act as) members of a Collective. A collective agent can have roles that are also roles of those agents.
 For example, in sociology, a &apos;group action&apos; is the situation in which a number of people (that result to be members of a collective) in a given area behave in a coordinated way in order to achieve a (often common) goal. The Agent in such a Situation is not single, but a CollectiveAgent (a Group). This can be generalized to the notion of social movement, which assumes a large Community or even the entire Society as agents.
 The difference between a CollectiveAgent and an Organization is that a Description that introduces a CollectiveAgent is also one that unifies the corresponding Collective. In practice, this difference makes collective agents &apos;less stable&apos; than organizations, because they have a dedicated, publicly recognizable Description that is conceived to introduce them.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘agente social’ que ‘actúa por’ agentes que son (y actúan como) miembros de un ‘colectivo’. Un agente colectivo puede tener roles que son también roles de otros agentes.
+        <rdfs:comment xml:lang="es">Un ‘agente social’ que ‘actúa por’ agentes que son (y actúan como) miembros de un ‘colectivo’. Un agente colectivo puede tener papeles que son también papeles de otros agentes.
 
 Por ejemplo, en sociología, una ‘acción de grupo’ es la situación en que un número de personas (que resultan ser miembros de un colectivo) en un área dada, se comportan de una forma coordinada para alcanzar una meta (normalmente común). El ‘agente’ en tal ‘situación’ no es único, sino un ‘agente colectivo’ (un grupo). Esto se puede generalizar a la noción de movimiento social, que asume una ‘comunidad’ grande o incluso una ‘sociedad’ entera como agente.
 
@@ -2771,7 +2771,7 @@ Las diferentes perspectivas se refieren al mismo evento, pero son todavía difer
 
 Una solución alternativa es la aquí aplicada, que explota la noción de ‘situación’ (observable); una ‘situación’ es una perspectiva, consistente con una ‘descripción’, que puede ser observada, de un conjunto de entidades. Se puede ver también como un ‘contexto relacional’ creado por un observador sobre la base de un &quot;marco&quot;. Por tanto, una ‘situación’ permite crear un contexto donde cada vista particular puede tener una identidad propia, mientras que el ‘evento’ preserva su propia identidad.
 
-Por ejemplo, ‘erosión como realización’ es una situación donde la erosión de las rocas se observa como un proceso que conduce a una cierta consecución: las condiciones (roles, parámetros) que sugieren tal perspectiva se establecen en una ‘descripción’, que actúa como una “teoría de consecuciones”. Del mismo modo, &apos;erosión como transición&apos; es una &apos;situación&apos; donde la erosión de las rocas se observa como un evento que ha cambiado un estado en otro: las condiciones para tal interpretación se establecen en una &apos;descripción&apos; diferente, que actúa como una &quot;teoría de transiciones de estado&quot;. Hay que tener en cuenta que, en ningún caso, el evento real es cambiado o enriquecido en sus partes por la vista aspectual.
+Por ejemplo, ‘erosión como realización’ es una situación donde la erosión de las rocas se observa como un proceso que conduce a una cierta consecución: las condiciones (papeles, parámetros) que sugieren tal perspectiva se establecen en una ‘descripción’, que actúa como una “teoría de consecuciones”. Del mismo modo, &apos;erosión como transición&apos; es una &apos;situación&apos; donde la erosión de las rocas se observa como un evento que ha cambiado un estado en otro: las condiciones para tal interpretación se establecen en una &apos;descripción&apos; diferente, que actúa como una &quot;teoría de transiciones de estado&quot;. Hay que tener en cuenta que, en ningún caso, el evento real es cambiado o enriquecido en sus partes por la vista aspectual.
 
 (2) Vistas de intencionalidad alternativa
 
@@ -3473,7 +3473,7 @@ See Event class for some thoughts on classifying events. See also &apos;Transiti
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Plan that defines Role(s), Task(s), and a specific structure for tasks to be executed in relation to goals to be achieved, in order to achieve the main goal of the project. In other words, a project is a plan with a subgoal structure and multiple roles and tasks.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘plan’ que define ‘role’(s), ‘tarea’(s), y una estructura específica para las tareas a ser ejecutadas en relación con las metas a ser alcanzadas, a fin de alcanzar la meta principal del proyecto. En otras palabras, un proyecto es un plan con una estructura de submetas y múltiples roles y tareas.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ‘plan’ que define papeles, tareas, y una estructura específica para las tareas a ser ejecutadas en relación con las metas a ser alcanzadas, a fin de alcanzar la meta principal del proyecto. En otras palabras, un proyecto es un plan con una estructura de submetas y múltiples papeles y tareas.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">Progetto</rdfs:label>
         <rdfs:label xml:lang="en">Project</rdfs:label>
@@ -3922,7 +3922,7 @@ Por ejemplo, alcanzar un destino podría estar definido por un plan de coger vac
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Theory is a Description that represents a set of assumptions for describing something, usually general. Scientific, philosophical, and commonsense theories can be included here.
 This class can also be used to act as &apos;naturalized reifications&apos; of logical theories (of course, they will be necessarily incomplete in this case, because second-order entities are represented as first-order ones).</rdfs:comment>
         <rdfs:comment xml:lang="es">Una ‘teoría’ es una ‘descripción’ que representa</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una ‘teoría’ es una ‘descripción’ que representa un conjunto de supuestos para describir algo, normalmente general. Las teorías científicas, filosóficas y de sentido común pueden ser aquí incluidas.
+        <rdfs:comment xml:lang="es">Una ‘teoría’ es una ‘descripción’ que representa un conjunto de supuestos para describir algo, normalmente general. Se pueden incluir aquí las teorías científicas, filosóficas y de sentido común.
 
 Esta clase también se puede utilizar para actuar como “materializaciones naturalizadas” de teorías lógicas (por supuesto, serán necesariamente incompletas en este caso, porque las entidades de segundo orden están representadas como entidades de primer orden).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
@@ -3994,9 +3994,8 @@ Esta clase también se puede utilizar para actuar como “materializaciones natu
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A transition is a Situation that creates a context for three TimeInterval(s), two additional different Situation(s), one Event, one Process, and at least one Object: the Event is observed as the cause for the transition, one Situation is the state before the transition, the second Situation is the state after the transition, the Process is the invariance under some different transitions (including the one represented here), in which at least one Object is situated. Finally, the time intervals position the situations and the transitional event in time.
-This class of situations partly encodes the ontology underlying typical engineering algebras for processes, e.g. Petri Nets. 
-A full representation of the transition ontology is outside the expressivity of OWL, because we would need qualified cardinality restrictions,  coreference, property equivalence, and property composition.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una transición es una ‘situación’ que crea un contexto para tres ‘intervalo(s) de tiempo’, dos ‘situación’(es), un ‘evento’, un ‘proceso’, y al menos un ‘objeto’: el ‘evento’ se observa como la causa para la transición, una ‘situación’ es el estado antes de la transición, la segunda ‘situación’ es el estado después de la transición, el ‘proceso’ es la invariante bajo algunas transiciones diferentes (incluyendo la que se representa aquí), in la cual se sitúa al menos un ‘objeto’. Finalmente, los intervalos de tiempo posicionan las situaciones y el evento de la transición en el tiempo. Esta clase de situaciones codifica parcialmente la ontología subyacente en las álgebras de ingeniería para procesos, por ejemplo, las redes de Petri. Una representación completa de la ontología de transición está fuera de la expresividad de OWL, porque necesitaríamos restricciones de cardinalidad cualificadas, co-referencia, equivalencia de propiedades, y composición de propiedades.</rdfs:comment>
+This class of situations partly encodes the ontology underlying typical engineering algebras for processes, e.g. Petri Nets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una transición es una ‘situación’ que crea un contexto para tres ‘intervalo(s) de tiempo’, dos ‘situación’(es), un ‘evento’, un ‘proceso’, y al menos un ‘objeto’: el ‘evento’ se observa como la causa para la transición, una ‘situación’ es el estado antes de la transición, la segunda ‘situación’ es el estado después de la transición, el ‘proceso’ es la invariante bajo algunas transiciones diferentes (incluyendo la que se representa aquí), en la cual se sitúa al menos un ‘objeto’. Finalmente, los intervalos de tiempo posicionan las situaciones y el evento de la transición en el tiempo. Esta clase de situaciones codifica parcialmente la ontología subyacente en las álgebras de ingeniería para procesos, por ejemplo, las redes de Petri.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Transition</rdfs:label>
         <rdfs:label xml:lang="it">Transizione</rdfs:label>
@@ -4032,7 +4031,7 @@ Esta clase es muy útil para aplicar una variedad de los patrones de diseño den
                 <owl:someValuesFrom rdf:resource="https://w3id.org/def/dul-es#Region"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Las unidades de medida se conceptualizan aquí como parámetros sobre regiones, que pueden tomar evaluados cómo valores de tipos de datos.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Las unidades de medida se conceptualizan aquí como parámetros sobre regiones, que pueden ser evaluados como valores de tipos de datos.</rdfs:comment>
         <rdfs:comment xml:lang="en">Units of measure are conceptualized here as parameters on regions, which can be valued as datatype values.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Unit of measure</rdfs:label>
@@ -4065,7 +4064,7 @@ Esta clase es muy útil para aplicar una variedad de los patrones de diseño den
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Plan that defines Role(s), Task(s), and a specific structure for tasks to be executed, usually supporting the work of an Organization</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘plan’ que define ‘role’(s), ‘tarea’(s), y una estructura para las tareas a ser ejecutadas, normalmente proporcionando soporte al trabajo de una ‘organización’.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ‘plan’ que define papeles, tareas, y una estructura para las tareas a ser ejecutadas, normalmente proporcionando soporte al trabajo de una ‘organización’.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Workflow</rdfs:label>
         <rdfs:label xml:lang="it">Workflow</rdfs:label>

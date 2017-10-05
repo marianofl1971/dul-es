@@ -1,2 +1,2 @@
 Número de licencia.
-
+es observable a lo largo de
