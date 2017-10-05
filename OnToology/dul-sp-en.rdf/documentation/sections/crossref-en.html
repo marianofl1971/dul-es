@@ -4889,7 +4889,7 @@ In all these examples, we notice a typical discontinuity between the constituted
          <strong>IRI:</strong> https://w3id.org/def/dul-es#hasConstraint</p>
       <div class="comment">
          <span class="markdown">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
-The intended semantics (not expressible in OWL) is that a Parameter isParameterFor a Concept that classifies an Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</span>
+The intended semantics is that a Parameter isParameterFor a Concept that classifies an Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -6303,7 +6303,7 @@ In all these examples, we notice a typical discontinuity between the constituted
          <strong>IRI:</strong> https://w3id.org/def/dul-es#isConstraintFor</p>
       <div class="comment">
          <span class="markdown">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
-The intended semantics (not expressible in OWL) is that a Parameter isConstraintFor and Entity if the Parameter isParameterFor a Concept that classifies that Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity. The use in OWL is therefore a shortcut to annotate what Parameter constrains what Entity</span>
+</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -8443,7 +8443,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
       <p>
          <strong>IRI:</strong> https://w3id.org/def/dul-es#usesConcept</p>
       <div class="comment">
-         <span class="markdown">A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.</span>
+         <span class="markdown">A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description.  </span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -8626,7 +8626,7 @@ Patterns (4) and (5) should be used instead when a constraint or a selection is 
          <strong>IRI:</strong> https://w3id.org/def/dul-es#hasParameterDataValue</p>
       <div class="comment">
          <span class="markdown">Parametrizes values from a datatype. For example, a Parameter MinimumAgeForDriving hasParameterDataValue 18 on datatype xsd:int, in the Italian traffic code. In this example, MinimumAgeForDriving isDefinedIn the Norm ItalianTrafficCodeAgeDriving.
-More complex parametrization requires workarounds. E.g. AgeRangeForDrugUsage could parametrize data value: 14 to 50 on the datatype: xsd:int. Since complex datatypes are not allowed in OWL1.0, a solution to this can only work by creating two 'sub-parameters': MinimumAgeForDrugUsage (that hasParameterDataValue 14) and MaximumAgeForDrugUsage (that hasParameterDataValue 50), which are components of (cf. hasComponent) the main Parameter AgeRangeForDrugUsage.
+More complex parametrization requires workarounds. E.g. AgeRangeForDrugUsage could parametrize data value: 14 to 50 on the datatype: xsd:int. 
 Ordering on subparameters can be created by using or specializing the object property 'precedes'.</span>
       </div>
       <dl class="definedBy">

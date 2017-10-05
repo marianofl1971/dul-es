@@ -48,8 +48,8 @@ Se han diseñado varias extensiones de DOLCE+DnS Ultralite; véase, por ejemplo,
 
 The translation into Spanish has been carried out by Mariano Fernández-López</owl:versionInfo>
         <dc:title xml:lang="en">The ontology DOLCE+DnS Ultralite</dc:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.4</owl:versionInfo>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.0</owl:versionInfo>
         <owl:versionInfo xml:lang="es">En 3.2, los enlaces entre las instancias de ‘región’ o ‘parámetro’ y sus tipos de datos han sido revisados y hecho más potentes, con el propósito de respaldar patrones de diseño para valores de datos que se modelan en OWL 1.0.
 También, los nombres de las propiedades relacionadas han sido cambiados para hacerlos más intuitivos. Asimismo, se ha añadido un campo de comentario de gran tamaño a la propiedad de objeto ‘expresa’, con el propósito de clarificar algunas cuestiones sobre sus muchas interpretaciones.
 
@@ -462,7 +462,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <owl:inverseOf rdf:resource="https://w3id.org/def/dul-es#directlyPrecedes"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
-        <rdfs:comment xml:lang="es">La relación intransitiva “sigue”. Por ejemplo, el miércoles precede directamente al jueves. El que la precedencia sea directa depende de la conceptualización del diseñador.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Sub-relación intransitiva de “sigue”. Por ejemplo, el miércoles precede directamente al jueves. El que la precedencia sea directa depende de la conceptualización del diseñador.</rdfs:comment>
         <rdfs:comment xml:lang="en">The intransitive follows relation. For example, Wednesday directly precedes Thursday. Directness of precedence depends on the designer conceptualization.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">directly follows</rdfs:label>
@@ -515,7 +515,7 @@ A same Entity can be given different descriptions, for example, an old cradle ca
         <rdfs:comment xml:lang="en">A partial order relation that holds between descriptions. It represents the proper part relation between a description and another description featuring the same properties as the former, with at least one additional one.
 Descriptions can be expanded either by adding other descriptions as parts, or by refining concepts that are used by them. 
 An &apos;intention&apos; to expand must be present (unless purely formal theories are considered, but even in this case a criterion of relevance is usually active).</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación de orden parcial que se establece entre descripciones. Representa la relación parte propia entre una descripción y otra descripción que presenta las mismas propiedades que la anterior, con al menos una propiedad adicional. Las descripciones se pueden expandir tanto añadiendo otras descripciones como partes, como refinando conceptos.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación de orden parcial que se establece entre descripciones. Representa la relación parte propia entre una descripción y otra descripción que presenta las mismas propiedades que la anterior, con al menos una propiedad adicional. Las descripciones se pueden expandir añadiendo otras descripciones como partes, y también refinando conceptos.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">espande</rdfs:label>
         <rdfs:label xml:lang="es">expande</rdfs:label>
@@ -591,7 +591,7 @@ This is only a first step to provide a framework, in which one can model differe
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#InformationObject"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Concept"/>
         <rdfs:comment xml:lang="en">A relation between an InformationObject and a Concept , e.g. the term &quot;dog&quot; expresses the Concept &quot;dog&quot;. For expressing a relational meaning, see the more general object property: expresses</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre un ‘objeto de información’  un ‘concepto’, por ejemplo, el término “perro” expresa el concepto Perro. Para expresar un significado relacional, véase la propiedad de objeto más general ‘expresa’.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre un ‘objeto de información’ y un ‘concepto’, por ejemplo, el término “perro” expresa el concepto Perro. Para expresar un significado relacional, véase la propiedad de objeto más general ‘expresa’.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">esprime il concetto</rdfs:label>
         <rdfs:label xml:lang="es">expresa concepto</rdfs:label>
@@ -609,7 +609,7 @@ This is only a first step to provide a framework, in which one can model differe
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:comment xml:lang="en">Generic distance relation between any Entity(s). E.g. Rome is far from Beijing, astronomy is far from necromancy.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Relación genérica de distancia entre cualquier ‘entidad’(es). Por ejemplo, Madrid está lejos de Pekín, la astronomía está lejos de la nigromancia.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relación genérica de distancia entre entidades cualesquiera. Por ejemplo, Madrid está lejos de Pekín, la astronomía está lejos de la nigromancia.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">está lejos de</rdfs:label>
         <rdfs:label xml:lang="en">far from</rdfs:label>
@@ -628,7 +628,7 @@ This is only a first step to provide a framework, in which one can model differe
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema. 
 E.g. &apos;year 2000 follows 1999&apos;, &apos;preparing coffee&apos; follows &apos;deciding what coffee to use&apos;, &apos;II World War follows I World War&apos;, etc. 
 It can be used between tasks, processes or time intervals, and subproperties would fit best in order to distinguish the different uses.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre un entidades, que expresa un esquema de “secuencia”. Por ejemplo, “el año 2000 sigue al 1999”, “preparar un café sigue a decidir qué tipo de café utilizar”, “la II Guerra Mundial sigue a la I Guerra Mundial”, etc. Se puede utilizar entre tareas, procesos o intervalos de tiempo, aunque se recomiendo utilizar subpropiedades para matizar mejor los distintos tipos de usos.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre un entidades, que expresa un esquema de “secuencia”. Por ejemplo, “el año 2000 sigue al 1999”, “preparar un café sigue a decidir qué tipo de café utilizar”, “la II Guerra Mundial sigue a la I Guerra Mundial”, etc. Se puede utilizar entre tareas, procesos o intervalos de tiempo, aunque se recomienda utilizar subpropiedades para matizar mejor los distintos tipos de usos.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">follows</rdfs:label>
         <rdfs:label xml:lang="it">segue</rdfs:label>
@@ -646,7 +646,7 @@ It can be used between tasks, processes or time intervals, and subproperties wou
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:comment xml:lang="en">A relation to encode either formal or informal characterizations of &apos;boundaries&apos; common to two different entities: an Event that ends when another begins, two abstract regions that have a common topological boundary, two objects that are said to be &apos;in contact&apos; from a commonsense perspective, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación para codificar bien una caracterizaciones formales o bien informales de de “límites comunes a dos entidades diferentes: un ‘evento’ que termina cuando otro empieza, dos regiones abstractas que tienen un límite topológico común, dos objetos que se dice que están “en contacto” desde una perspectiva del sentido común.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación para codificar bien caracterizaciones formales o bien informales de límites comunes a dos entidades diferentes: un ‘evento’ que termina cuando otro empieza, dos regiones abstractas que tienen un límite topológico común, dos objetos que se dice que están “en contacto” desde una perspectiva del sentido común.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">has common boundary</rdfs:label>
         <rdfs:label xml:lang="es">tiene límite común</rdfs:label>
@@ -683,7 +683,7 @@ Intuitively, a constituent is a part belonging to a lower layer. Since layering 
 A desirable advantage of this distinction is that we are able to talk e.g. of physical constituents of non-physical objects (e.g. systems), while this is not possible in terms of parts.
 Example of are the persons constituting a social system, the molecules constituting a person, the atoms constituting a river, etc. 
 In all these examples, we notice a typical discontinuity between the constituted and the constituent object: e.g. a social system is conceptualized at a different layer from the persons that constitute it, a person is conceptualized at a different layer from the molecules that constitute them, and a river is conceptualized at a different layer from the atoms that constitute it.</rdfs:comment>
-        <rdfs:comment xml:lang="es">“Constitución” depende de una estructura por niveles del mundo descrito por una ontología. Por ejemplo, las granularidades científicas (por ejemplo cuerpo-órgano-tejido-célula) o estratos ontológicos (por ejemplo, social-mental-biológico-físico) son estructuras por niveles típicas. Intuitivamente, un constituyente es una parte perteneciente a un nivel inferior. Puesto que la estructura por niveles es realmente una partición del mundo descrito por una ontología, los constituyentes no se clasifican propiamente como partes, aunque esta aproximación pueda ser intuitiva para el sentido común. Una ventaja deseable de esta distinción es que podemos hablar, por ejemplo, de constiyuentes físicos de objetos no físicos (por ejemplo, sistemas), mientras que no es posible hacerlo en términos de partes. Un ejemplo es el de las personas que constituyen un sistema social, las moléculas que constituyen una persona, los átomos que constituyen un río, etc. In todos estos ejemplos, podemos apreciar un discontinuidad típica entre el constituido y el constituyente; por ejemplo, un sistema social se conceptualiza en diferentes niveles desde la personas que lo constituyen, y un río se conceptualiza en diferentes niveles desde los átomos que los constituyen.</rdfs:comment>
+        <rdfs:comment xml:lang="es">“Constitución” depende de una estructura por niveles del mundo descrito por una ontología. Por ejemplo, las granularidades científicas (por ejemplo cuerpo-órgano-tejido-célula) o estratos ontológicos (por ejemplo, social-mental-biológico-físico) son estructuras por niveles típicas. Intuitivamente, un constituyente es una parte perteneciente a un nivel inferior. Puesto que la estructura por niveles es realmente una partición del mundo descrito por una ontología, los constituyentes no se clasifican propiamente como partes, aunque esta aproximación pueda ser intuitiva para el sentido común. Una ventaja deseable de esta distinción es que podemos hablar, por ejemplo, de constiyuentes físicos de objetos no físicos (por ejemplo, sistemas), mientras que no es posible hacerlo en términos de partes. Un ejemplo es el de las personas que constituyen un sistema social, las moléculas que constituyen una persona, los átomos que constituyen un río, etc. En todos estos ejemplos, podemos apreciar un discontinuidad típica entre el constituido y el constituyente; por ejemplo, un sistema social se conceptualiza en diferentes niveles desde la personas que lo constituyen, y un río se conceptualiza en diferentes niveles desde los átomos que los constituyen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">ha costituente</rdfs:label>
         <rdfs:label xml:lang="en">has constituent</rdfs:label>
@@ -700,8 +700,8 @@ In all these examples, we notice a typical discontinuity between the constituted
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Parameter"/>
         <rdfs:comment xml:lang="en">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
-The intended semantics (not expressible in OWL) is that a Parameter isParameterFor a Concept that classifies an Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre parámetros y entidades. Permite afirmar restricciones genéricas (codificadas como parámetros), por ejemplo, Edad Mínima Para Conducir es Restricción Para Juan (donde Juan es el sujeto legal bajo la Ley de Tráfico). La semántica que hay detrás (no expresable en OWL) es que un ‘parámetro’ ‘es parámetro de’ un ‘concepto’ que clasifica una ‘entidad’; además, implica que un ‘parámetro’ paratetriza una ‘región’ que ‘es región para’ esa entidad.</rdfs:comment>
+The intended semantics is that a Parameter isParameterFor a Concept that classifies an Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre parámetros y entidades. Permite afirmar restricciones genéricas (codificadas como parámetros), por ejemplo, Edad Mínima Para Conducir es Restricción Para Juan (donde Juan es el sujeto legal bajo la Ley de Tráfico). La semántica que hay detrás es que un ‘parámetro’ ‘es parámetro de’ un ‘concepto’ que clasifica una ‘entidad’; además, implica que un ‘parámetro’ paratetriza una ‘región’ que ‘es región para’ esa entidad.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">ha vincolo</rdfs:label>
         <rdfs:label xml:lang="en">has constraint</rdfs:label>
@@ -921,7 +921,7 @@ E.g., &apos;A precondition to declare war against a foreign country is claiming 
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Situation"/>
         <rdfs:comment xml:lang="en">A relation between entities and situations, e.g. &apos;this morning I&apos;ve prepared my coffee with a new fantastic Arabica&apos;, i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación entre entidades y situaciones, por ejemplo, “esta mañana he preparado mi café con un nuevo fantástico café arábica”, es decir, (una candidad de) un nuevo fantástico café arábica ‘está en el contexto’ de preparación de mi café esta mañana.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación entre entidades y situaciones, por ejemplo, “esta mañana he preparado mi café con un fantástico nuevo café arábica”, es decir, (una candidad de) un fantástico nuevo café arábica ‘está en el contexto’ de preparación de mi café esta mañana.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">está en el contexto de</rdfs:label>
         <rdfs:label xml:lang="en">has setting</rdfs:label>
@@ -1283,7 +1283,7 @@ In all these examples, we notice a typical discontinuity between the constituted
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Parameter"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Entity"/>
         <rdfs:comment xml:lang="en">A relation between parameters and entities. It allows to assert generic constraints (encoded as parameters), e.g. MinimumAgeForDriving isConstraintFor John (where John is a legal subject under the TrafficLaw).
-The intended semantics (not expressible in OWL) is that a Parameter isConstraintFor and Entity if the Parameter isParameterFor a Concept that classifies that Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity. The use in OWL is therefore a shortcut to annotate what Parameter constrains what Entity</rdfs:comment>
+The intended semantics is that a Parameter isConstraintFor and Entity if the Parameter isParameterFor a Concept that classifies that Entity; moreover, it entails that a Parameter parametrizes a Region that isRegionFor that Entity.</rdfs:comment>
         <rdfs:comment xml:lang="es">Es la relación inversa de &apos;tiene restricción&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">es restricción para</rdfs:label>
@@ -2103,7 +2103,7 @@ Subproperties can be defined in order to distinguish the different uses.</rdfs:c
         <rdfs:comment xml:lang="en">A partial order relation that holds between social objects. 
 It mainly represents the subsumption relation between e.g. a Concept or Description and another Concept (resp. Description) that is broader in extensional interpretation, but narrower in intensional interpretation. For example, the role PhDStudent specializes the role Student.
 Another possible use is between a Collection that isCoveredBy a Concept A, and another Collection that isCoveredBy a Concept B that on its turm specializes A. For example, the 70,000 series Selmer Mark VI saxophone Collection specializes the Selmer Mark VI saxophone Collection.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una relación de orden parcial que tiene lugar entre objetos sociales. Representa principalmente la relación de subsunción entre, por ejemplo, un ‘concepto’ o ‘descripción’ y otro concepto (‘descripción’ respectivamente) que es más amplia en la interpretación extensional, pero más estrecha en la interpretación intensional. Por ejemplo, el papel Estudiante de Doctorado especializa el papel Estudiante. Otro posible uso es entre una ‘colección’ que ‘es cubierta por’ un ‘concepto’ A, y otra ‘colección’ que es cubierta por un concepto B que, a su vez, especializa A. Por ejemplo, la serie de saxofones altos de la colección Selmer Mark VI la colección Selmer Mark VI.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una relación de orden parcial que tiene lugar entre objetos sociales. Representa principalmente la relación de subsunción entre, por ejemplo, un ‘concepto’ o ‘descripción’ y otro concepto (‘descripción’ respectivamente) que es más amplia en la interpretación extensional, pero más estrecha en la interpretación intensional. Por ejemplo, el papel Estudiante de Doctorado especializa el papel Estudiante. Otro posible uso es entre una ‘colección’ que ‘es cubierta por’ un ‘concepto’ A, y otra ‘colección’ que es cubierta por un concepto B que, a su vez, especializa A. Por ejemplo, la serie de saxofones altos de la colección Selmer Mark VI especializa la colección Selmer Mark VI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">especializa</rdfs:label>
         <rdfs:label xml:lang="en">specializes</rdfs:label>
@@ -2119,7 +2119,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Description"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Collection"/>
         <rdfs:comment xml:lang="en">A Collection has a unification criterion, provided by a Description; for example, a community of practice can be unified by a shared theory or interest, e.g. the community that makes research on mirror neurons shares some core knowledge about mirror neurons, which can be represented as a Description MirrorNeuronTheory that unifies the community. There can be several unifying descriptions.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una ‘colección’ tiene un criterio de unificación, proporcionado por una ‘descripción’; por ejemplo, una comunidad de práctica puede estar unificada por una teoría compartida o interés, por ejemplo, la comunidad que hace investigación en neuronas especulares comparte algunos conocimientos básicos sobre neuronas especulares, que pueden ser representados como una ‘descripción’ Teoría de Neuronas Especulares que unifica la comunidad. Puede haber varias descripciones unificadoras.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una ‘colección’ tiene un criterio de unificación, proporcionado por una ‘descripción’; por ejemplo, una comunidad de práctica puede estar unificada por una teoría compartida o interés, por ejemplo, la comunidad que hace investigación en neuronas especulares comparte algunos conocimientos básicos sobre neuronas especulares, que pueden ser representados como una ‘descripción’ (la Teoría de Neuronas Especulares) que unifica la comunidad. Puede haber varias descripciones unificadoras.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="es">unifica</rdfs:label>
         <rdfs:label xml:lang="it">unifica</rdfs:label>
@@ -2134,7 +2134,7 @@ Another possible use is between a Collection that isCoveredBy a Concept A, and a
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/dul-es#associatedWith"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Description"/>
         <rdfs:range rdf:resource="https://w3id.org/def/dul-es#Concept"/>
-        <rdfs:comment xml:lang="en">A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description. This last condition cannot be encoded for object properties in OWL.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A generic relation holding between a Description and a Concept. In order to be used, a Concept must be previously definedIn another Description.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una relación genérica que tiene lugar entre una ‘descripción’ y un ‘concepto’. Para ser usada, un ‘concepto’ debe ser previamente en (‘definido en’) otra descripción.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">usa il concetto</rdfs:label>
@@ -2180,7 +2180,7 @@ Patterns (4) and (5) should be used instead when a constraint or a selection is 
 4) Cuando se requiere el valor, pero no directamente observado, asignar un valor a un parámetro a través de ‘tiene valor de parámetro’, y entonces asociar el ‘parámetro’ a una ‘entidad’ utilizando ‘es restricción para’.
 5) Cuando se requiere el valor, pero no directamente observado, se puede asignar un ‘parámetro’ a una ‘región’ utilizando ‘parametriza’, y entonces asignando un xsd:_valor a esa ‘región’, utilizando ‘tiene valor de región’.
 
-Los cinco enfoques responden a diferentes requisitos. Por ejemplo, un valor simple se puede asignar fácilmente utilizando el patrón (1), pero si se necesita asignar un intervalo entre dos valores, se debería introducir una ‘región’ para materializar ese intervalo, como sugiere el patrón (2). Además, si se necesita distinguir la ‘cualidad’ individual de un valor, por ejemplo, la naturaleza particular de la densidad de una sustancia, se puede utilizar el patrón (3). Los patrones (4) y (5) se debería utilizar cuando se modele una restricción o una selección, independientemente de la observación directa de los valores del mundo real.</rdfs:comment>
+Los cinco enfoques responden a diferentes requisitos. Por ejemplo, un valor simple se puede asignar fácilmente utilizando el patrón (1), pero si se necesita asignar un intervalo entre dos valores, se debería introducir una ‘región’ para materializar ese intervalo, como sugiere el patrón (2). Además, si se necesita distinguir la ‘cualidad’ individual de un valor, por ejemplo, la naturaleza particular de la densidad de una sustancia, se puede utilizar el patrón (3). Los patrones (4) y (5) se deberían utilizar cuando se modele una restricción o una selección, independientemente de la observación directa de los valores del mundo real.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">ha valore</rdfs:label>
         <rdfs:label xml:lang="en">has data value</rdfs:label>
@@ -2228,7 +2228,6 @@ Los cinco enfoques responden a diferentes requisitos. Por ejemplo, un valor simp
         <rdfs:domain rdf:resource="https://w3id.org/def/dul-es#Parameter"/>
         <rdfs:comment xml:lang="es">Parametriza valores de un tipo de datos. Por ejemplo, un ‘parámetro’ Edad Mínima para Conducir ‘tiene valor de parámetro’ 18 en el tipo de datos xsd:int, en el código español de circulación. En este ejemplo, Edad Mínima para Conducir ‘está definida en’ el Código de la Circulación de España. Una parametrización más compleja requiere un camino más largo. Por ejemplo, suponiendo que el Intervalo de Edad para Acceder al Cuerpo Nacional de Policía de España esté entre 18 y 65 años, se podrían utilizar dos sub-parámetros: Edad Mínima para Acceder al Cuerpo Nacional de Policía y Edad Máxima para acceder al Cuerpo Nacional de Policía. La ordenación de los sub-parámetros puede ser llevada a cabo mediante la propiedad de objeto ‘precede’.</rdfs:comment>
         <rdfs:comment xml:lang="en">Parametrizes values from a datatype. For example, a Parameter MinimumAgeForDriving hasParameterDataValue 18 on datatype xsd:int, in the Italian traffic code. In this example, MinimumAgeForDriving isDefinedIn the Norm ItalianTrafficCodeAgeDriving.
-More complex parametrization requires workarounds. E.g. AgeRangeForDrugUsage could parametrize data value: 14 to 50 on the datatype: xsd:int. Since complex datatypes are not allowed in OWL1.0, a solution to this can only work by creating two &apos;sub-parameters&apos;: MinimumAgeForDrugUsage (that hasParameterDataValue 14) and MaximumAgeForDrugUsage (that hasParameterDataValue 50), which are components of (cf. hasComponent) the main Parameter AgeRangeForDrugUsage.
 Ordering on subparameters can be created by using or specializing the object property &apos;precedes&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">ha valore</rdfs:label>
@@ -2631,9 +2630,7 @@ Mientras que los diseños describen normalmente entidades a ser construidas, tam
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A PhysicalArtifact that is also described by a Design. This excludes simple recycling or refunctionalization of natural objects. Most common sense &apos;artifacts&apos; can be included in this class: cars, lamps, houses, chips, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘artefacto físico’ que está descrito por un ‘diseño’. Esto excluye el simple reciclaje o la refuncionalización de objetos naturales. Los “artefactos” en el sentido más común se pueden incluir en esta clase: coches, lámparas, casas, chips, etc.
-
-A PhysicalArtifact that is also described by a Design. This excludes simple recycling or refunctionalization of natural objects. Most common sense &apos;artifacts&apos; can be included in this class: cars, lamps, houses, chips, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ‘artefacto físico’ que está descrito por un ‘diseño’. Esto excluye el simple reciclaje o la refuncionalización de objetos naturales. Los “artefactos” en el sentido más común se pueden incluir en esta clase: coches, lámparas, casas, chips, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">Artefatto progettato</rdfs:label>
         <rdfs:label xml:lang="en">Designed artifact</rdfs:label>
