@@ -12,22 +12,6 @@
     <owl:Ontology rdf:about="https://w3id.org/def/dul-es">
         <rdfs:comment xml:lang="es">Agradecimiento: a María Poveda-Villalón por la generación de la documentación en HTML.</rdfs:comment>
         <rdfs:comment xml:lang="en">Acknowledgement: María Poveda-Villalón by the generation of the HTML documentation.</rdfs:comment>
-        <rdfs:comment xml:lang="es">La ontología DOLCE+DnS Ultralite.
-
-Es una simplificación de algunas partes de la biblioteca DOLCE Lite-Plus (cf. https://www.w3.org/2001/sw/BestPractices/WNET/DLP3941_daml.html).
-
-Los principales aspectos en los cuales DOLCE+DnS Ultralite se diferencia de DOLCE Lite-Plus son los siguientes:
-
-- Los nombres de las clases y de las relaciones se han hecho más intuitivos.
-- La parte relacionada con DnS es más cercana a la ontología constructiva DnS más nueva (http://www.ontologydesignpatterns.org/ont/dul/cDnS.owl).
-- Las relaciones temporales y espaciales se han simplificado.
-- Las cualidades y las regiones son ahora más relajadas que en DOLCE-Full: ahora se pueden utilizar como atributos de cualquier entidad, aunque hay dos axiomas establecen que cada cualidad tiene una región y viceversa.
-- La axiomatización hace uso de contructos más simples que los de DOLCE Lite-Plus.
-- La arquitectura de la ontología está basada en patrones, llamados patrones de contenido de diseño de ontologías, que pueden ser aplicados independientemente en el diseño de ontologías de dominio (cf. http://www.ontologydesignpatterns.org). Esto significa que DOLCE+DnS Ultralite también está disponible por módulos, Si se necesitan muchos módulos en un mismo proyecto de ontologías, es, en cualquier caso, útil utilizar esta versión integrada.
-
-El resultado final es una ontología general, ligera y fácil de aplicar tanto para contextos físicos como sociales.
-
-Se han diseñado varias extensiones de DOLCE+DnS Ultralite; véase, por ejemplo, la extensión para objetos de información: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl,para sistemas: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl,  para planes: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl,, y para el dominio léxico y semiótico: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl, etc.</rdfs:comment>
         <rdfs:comment xml:lang="en">The DOLCE+DnS Ultralite ontology.
 It is a simplification of some parts of the DOLCE Lite-Plus library (cf. https://www.w3.org/2001/sw/BestPractices/WNET/DLP3941_daml.html). 
 Main aspects in which DOLCE+DnS Ultralite departs from DOLCE Lite-Plus are the following:
@@ -44,6 +28,22 @@ Several extensions of DOLCE+DnS Ultralite have been designed; see for example th
 for systems: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl, 
 for plans: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl, 
 and for the lexical and semiotic domains: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La ontología DOLCE+DnS Ultralite.
+
+Es una simplificación de algunas partes de la biblioteca DOLCE Lite-Plus (cf. https://www.w3.org/2001/sw/BestPractices/WNET/DLP3941_daml.html).
+
+Los principales aspectos en los cuales DOLCE+DnS Ultralite se diferencia de DOLCE Lite-Plus son los siguientes:
+
+- Los nombres de las clases y de las relaciones se han hecho más intuitivos.
+- La parte relacionada con DnS es más cercana a la ontología constructiva DnS más nueva (http://www.ontologydesignpatterns.org/ont/dul/cDnS.owl).
+- Las relaciones temporales y espaciales se han simplificado.
+- Las cualidades y las regiones son ahora más relajadas que en DOLCE-Full: ahora se pueden utilizar como atributos de cualquier entidad, aunque hay dos axiomas que establecen que cada cualidad tiene una región y viceversa.
+- La axiomatización hace uso de contructos más simples que los de DOLCE Lite-Plus.
+- La arquitectura de la ontología está basada en patrones, llamados patrones de contenido de diseño de ontologías, que pueden ser aplicados independientemente en el diseño de ontologías de dominio (cf. http://www.ontologydesignpatterns.org). Esto significa que DOLCE+DnS Ultralite también está disponible por módulos, Si se necesitan muchos módulos en un mismo proyecto de ontologías, es, en cualquier caso, útil utilizar esta versión integrada.
+
+El resultado final es una ontología general, ligera y fácil de aplicar tanto para contextos físicos como sociales.
+
+Se han diseñado varias extensiones de DOLCE+DnS Ultralite; véase, por ejemplo, la extensión para objetos de información: http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl,para sistemas: http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl,  para planes: http://www.ontologydesignpatterns.org/ont/dul/PlansLite.owl,, y para el dominio léxico y semiótico: http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl, etc.</rdfs:comment>
         <owl:versionInfo xml:lang="es">Created by Aldo Gangemi as both a simplification and extension of DOLCE and Descriptions and Situations ontologies.
 
 The translation into Spanish has been carried out by Mariano Fernández-López</owl:versionInfo>
@@ -2609,9 +2609,9 @@ Por ejemplo, un ‘plan’ es una ‘descripción’ de algunas acciones a ser e
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Description of the Situation, in terms of structure and function, held by an Entity for some reason.
 A design is usually accompanied by the rationales behind the construction of the designed Entity (i.e. of the reasons why a design is claimed to be as such). For example, the actual design (a Situation) of a car or of a law is based on both the specification (a Description) of the structure, and the rationales used to construct cars or laws.
 While designs typically describe entities to be constructed, they can also be used to describe &apos;refunctionalized&apos; entities, or to hypothesize unknown functions. For example, a cradle can be refunctionalized as a flowerpot based on a certain home design.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una ‘descripción’ de una ‘situación’, en términos de estructura y función, mantenida por una ‘entidad’ por alguna razón. Un diseño está normalmente acompañado por las razones que hay detrás de la construcción de la ‘entidad’ diseñada (es decir, de las razones por las que se afirma que el diseño tiene que ser tal y como es). Por ejemplo, el diseño real (una ‘situación’). De un coche o de una ley está basado tanto en la especificación (una ‘descripción’) de la estructura, y las razones en que se basa la construcción de coches y la elaboración de leyes.
+        <rdfs:comment xml:lang="es">Una ‘descripción’ de una ‘situación’, en términos de estructura y función, mantenida por una ‘entidad’ por alguna razón. Un diseño está normalmente acompañado por las razones que hay detrás de la construcción de la ‘entidad’ diseñada (es decir, de las razones por las que se afirma que el diseño tiene que ser tal y como es). Por ejemplo, el diseño real (una ‘situación’) de un coche o de una ley está basado tanto en la especificación (una ‘descripción’) de la estructura, y las razones en que se basa la construcción de coches y la elaboración de leyes.
 
-Mientras que los diseños describen normalmente entidades a ser construidas, también se pueden utilizar para para describir entidades “refuncionalizadas”, o para hipotetizar funciones desconocidas. Por ejemplo, una cuna puede ser refuncionalizado como una maceta basándose en cierto diseño del hogar.</rdfs:comment>
+Mientras que los diseños describen normalmente entidades a ser construidas, también se pueden utilizar para describir entidades “refuncionalizadas”, o para hipotetizar funciones desconocidas. Por ejemplo, una cuna puede ser refuncionalizada como una maceta basándose en cierto diseño del hogar.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Design</rdfs:label>
         <rdfs:label xml:lang="it">Design</rdfs:label>
@@ -2756,7 +2756,7 @@ Both positions are in principle valid, but, if taken too radically, they focus o
 For this reason, in this ontology both events and situations are allowed, together with descriptions, in order to encode the modelling needs, independently from the position (if any) chosen by the designer.</rdfs:comment>
         <rdfs:comment xml:lang="es">Cualquier proceso, suceso o estado físico, social o mental.
 
-Los eventos se pueden clasificar de diferentes maneras, posiblemente basadas en “aspecto” (por ejemplo, de estado, continuo, consecución, etc.), en agentividad (por ejemplo, intencional, natural, etc.), o en participantes típicos (por ejemplo, humanos, físicos, abstractos, comida, etc.).
+Los eventos se pueden clasificar de diferentes maneras, posiblemente basadas en el “aspecto” (por ejemplo, de estado, continuo, consecución, etc.), en agentividad (por ejemplo, intencional, natural, etc.), o en participantes típicos (por ejemplo, humanos, físicos, abstractos, comida, etc.).
 
 Aquí no se toma ninguna dirección especial, y a continuación se explica por qué: los eventos están relacionados con situaciones observables, y pueden admitir diferentes puntos de vista al mismo tiempo.
 
@@ -2942,7 +2942,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
         <owl:disjointWith rdf:resource="https://w3id.org/def/dul-es#Situation"/>
         <owl:disjointWith rdf:resource="https://w3id.org/def/dul-es#SocialAgent"/>
         <rdfs:comment xml:lang="en">A piece of information, such as a musical composition, a text, a word, a picture, independently from how it is concretely realized.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una pieza de información, como puede ser una composición musical, un texto, una palabra, una fotografía, independientemente de cómo está materializada o no.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una pieza de información, como puede ser una composición musical, un texto, una palabra, una fotografía, independientemente de cómo está materializada.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Information object</rdfs:label>
         <rdfs:label xml:lang="it">Oggetto informativo</rdfs:label>
@@ -3033,7 +3033,7 @@ The second notion is social, localized in space-time (&apos;social semantics&apo
 It is different from a Plan, because plans could be carried out in order to follow a method, but a method can be followed by executing alternative plans.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un método es una ‘descripción’ que define o utiliza conceptos para guiar la realización de acciones dirigidas a una solución con respecto a un problema.
 
-Es diferente de un ‘plan’, porque los planes podrían ser llevados a cabo para seguir un método, pero un método puede ser seguido por la ejecución de planes alternativos.</rdfs:comment>
+Es diferente de un ‘plan’, porque se podrían llevar a cabo diferentes planes siguiendo un método, y un método puede ser seguido por la ejecución de planes alternativos</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Method</rdfs:label>
         <rdfs:label xml:lang="it">Metodo</rdfs:label>
@@ -3156,7 +3156,7 @@ Es diferente de un ‘plan’, porque los planes podrían ser llevados a cabo pa
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/dul-es#SocialAgent"/>
         <rdfs:comment xml:lang="en">An internally structured, conventionally created SocialAgent, needing a specific Role and Agent that plays it, in order to act.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un agente sociale strutturato internamente e creato convenzionalmente. Per agire, ha bisogno di ruoli e agenti che li ricoprano.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘agente social’ internamente estructurado, convencionalmente creado, que necesita un ‘role’ específico y un ‘agente’ que lo juegue, para actuar.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ‘agente social’ internamente estructurado, convencionalmente creado, que necesita un ‘papel’ específico y un ‘agente’ que lo juegue, para actuar.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
         <rdfs:label xml:lang="it">Organizzazione</rdfs:label>
@@ -3183,7 +3183,7 @@ Es diferente de un ‘plan’, porque los planes podrían ser llevados a cabo pa
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/def/dul-es#Role"/>
         <rdfs:comment xml:lang="en">A Concept that classifies a Region; the difference between a Region and a Parameter is that regions represent sets of observable values, e.g. the height  of a given building, while parameters represent constraints or selections on observable values, e.g. &apos;VeryHigh&apos;. Therefore, parameters can also be used to constrain regions, e.g. VeryHigh on a subset of values of the Region Height applied to buildings, or to add an external selection criterion , such as measurement units, to regions, e.g. Meter on a subset of values from the Region Length applied to the Region Length applied to roads.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un ‘concepto’ que clasifica una ‘región’. La diferencia entre una ‘región’ y un ‘parámetro’ es que las regiones representan conjuntos de valores observables, por ejemplo, la altura de un edificio dado, mientras que los parámetros representan restricciones o selecciones sobre los valores observables, por ejemplo, ‘muy alto’. Por lo tanto, los parámetros también se pueden utilizar para restringir regiones, p.ej., ‘muy alto’ a un conjunto de valores de la ‘región’ ‘alto’ aplicado a edificios, o añadir un criterio de selección externa, tal como unidades de medida, a regiones, p.ej. ‘metro’ a un subconjunto de valores de la ‘región’ ‘longitud’ aplicados a la ‘región’ ‘longitud’ aplicado a carreteras.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un ‘concepto’ que clasifica una ‘región’. La diferencia entre una ‘región’ y un ‘parámetro’ es que las regiones representan conjuntos de valores observables, por ejemplo, la altura de un edificio dado, mientras que los parámetros representan restricciones o selecciones sobre los valores observables, por ejemplo, ‘muy alto’. Por lo tanto, los parámetros también se pueden utilizar para restringir regiones, p.ej., ‘muy alto’ a un conjunto de valores de la ‘región’ que sean altos aplicado a edificios, o añadir un criterio de selección externa, tal como unidades de medida, a regiones, p.ej. ‘metro’ a un subconjunto de valores de la ‘región’ ‘longitud’ aplicados a la ‘región’ ‘longitud’ aplicado a carreteras.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="en">Parameter</rdfs:label>
         <rdfs:label xml:lang="it">Parametro</rdfs:label>
@@ -3437,6 +3437,9 @@ En este sentido genérico, un ‘lugar’ es una localización “aproximada”.
 
     <owl:Class rdf:about="https://w3id.org/def/dul-es#Process">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/dul-es#Event"/>
+        <rdfs:comment xml:lang="es">Es un marcador de posición para eventos que se consideran en su evolución, o, en cualquier caso, no estrictamente dependientes de agentes, tareas y planes.
+
+Véase la clase ‘evento’ para algunas reflexiones sobre clasificación de eventos. Véase también ‘transición’.</rdfs:comment>
         <rdfs:comment xml:lang="en">This is a placeholder for events that are considered in their evolution, or anyway not strictly dependent on agents, tasks, and plans. 
 See Event class for some thoughts on classifying events. See also &apos;Transition&apos;.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
@@ -3733,7 +3736,7 @@ Being dependent on communication, all social objects need to be expressed by som
 
 En otras palabras, todos los objetos que han sido o son creados en el proceso de comunicación social: en beneficio de la comunicación (‘objeto de información’), para incorporar nuevos individuos (agente social, lugar), para conceptualizar entidades existentes (‘situación), para recopilación de entidades existentes (‘colección’), o para describir entidades existentes (‘descripción’, ‘concepto’).
 
-Al ser dependientes de la comunicación, todos los agentes sociales necesitan estar expresados por medio de algún objeto de información (los objeto de información están auto-expresados).</rdfs:comment>
+Al ser dependientes de la comunicación, todos los agentes sociales necesitan estar expresados por medio de algún objeto de información (los objetos de información están auto-expresados).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/dul-es"/>
         <rdfs:label xml:lang="it">Oggetto sociale</rdfs:label>
         <rdfs:label xml:lang="en">Social object</rdfs:label>
