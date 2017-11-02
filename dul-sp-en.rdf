@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<!--Cambio para que Ontooloy realice el pull request-->
 <rdf:RDF xmlns="https://w3id.org/def/dul-es#"
      xml:base="https://w3id.org/def/dul-es"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
