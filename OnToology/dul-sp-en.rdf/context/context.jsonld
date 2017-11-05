@@ -1,0 +1,701 @@
+{
+  "@context" : {
+    "isDefinedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isDefinedIn",
+      "@type" : "@id"
+    },
+    "Diagnosis" : {
+      "@id" : "https://w3id.org/def/dul-es#Diagnosis"
+    },
+    "unifies" : {
+      "@id" : "https://w3id.org/def/dul-es#unifies",
+      "@type" : "@id"
+    },
+    "Design" : {
+      "@id" : "https://w3id.org/def/dul-es#Design"
+    },
+    "isExecutedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isExecutedIn",
+      "@type" : "@id"
+    },
+    "farFrom" : {
+      "@id" : "https://w3id.org/def/dul-es#farFrom",
+      "@type" : "@id"
+    },
+    "Situation" : {
+      "@id" : "https://w3id.org/def/dul-es#Situation"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/def/dul-es#UnitOfMeasure"
+    },
+    "InformationObject" : {
+      "@id" : "https://w3id.org/def/dul-es#InformationObject"
+    },
+    "isTaskOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isTaskOf",
+      "@type" : "@id"
+    },
+    "hasConstituent" : {
+      "@id" : "https://w3id.org/def/dul-es#hasConstituent",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "isParametrizedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isParametrizedBy",
+      "@type" : "@id"
+    },
+    "includesAgent" : {
+      "@id" : "https://w3id.org/def/dul-es#includesAgent",
+      "@type" : "@id"
+    },
+    "specializes" : {
+      "@id" : "https://w3id.org/def/dul-es#specializes",
+      "@type" : "@id"
+    },
+    "isRelatedToConcept" : {
+      "@id" : "https://w3id.org/def/dul-es#isRelatedToConcept",
+      "@type" : "@id"
+    },
+    "Amount" : {
+      "@id" : "https://w3id.org/def/dul-es#Amount"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "SocialAgent" : {
+      "@id" : "https://w3id.org/def/dul-es#SocialAgent"
+    },
+    "isConcretelyExpressedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isConcretelyExpressedBy",
+      "@type" : "@id"
+    },
+    "Organism" : {
+      "@id" : "https://w3id.org/def/dul-es#Organism"
+    },
+    "describes" : {
+      "@id" : "https://w3id.org/def/dul-es#describes",
+      "@type" : "@id"
+    },
+    "parametrizes" : {
+      "@id" : "https://w3id.org/def/dul-es#parametrizes",
+      "@type" : "@id"
+    },
+    "isSettingFor" : {
+      "@id" : "https://w3id.org/def/dul-es#isSettingFor",
+      "@type" : "@id"
+    },
+    "WorkflowExecution" : {
+      "@id" : "https://w3id.org/def/dul-es#WorkflowExecution"
+    },
+    "isLocationOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isLocationOf",
+      "@type" : "@id"
+    },
+    "TypeCollection" : {
+      "@id" : "https://w3id.org/def/dul-es#TypeCollection"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/def/dul-es#Organization"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "isTaskDefinedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isTaskDefinedIn",
+      "@type" : "@id"
+    },
+    "includesEvent" : {
+      "@id" : "https://w3id.org/def/dul-es#includesEvent",
+      "@type" : "@id"
+    },
+    "SocialObject" : {
+      "@id" : "https://w3id.org/def/dul-es#SocialObject"
+    },
+    "isPostconditionOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isPostconditionOf",
+      "@type" : "@id"
+    },
+    "isTimeOfObservationOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isTimeOfObservationOf",
+      "@type" : "@id"
+    },
+    "Transition" : {
+      "@id" : "https://w3id.org/def/dul-es#Transition"
+    },
+    "PhysicalBody" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalBody"
+    },
+    "isReferenceOfInformationRealizedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isReferenceOfInformationRealizedBy",
+      "@type" : "@id"
+    },
+    "hasRegionDataValue" : {
+      "@id" : "https://w3id.org/def/dul-es#hasRegionDataValue"
+    },
+    "precedes" : {
+      "@id" : "https://w3id.org/def/dul-es#precedes",
+      "@type" : "@id"
+    },
+    "Object" : {
+      "@id" : "https://w3id.org/def/dul-es#Object"
+    },
+    "isClassifiedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isClassifiedBy",
+      "@type" : "@id"
+    },
+    "InformationRealization" : {
+      "@id" : "https://w3id.org/def/dul-es#InformationRealization"
+    },
+    "isConceptExpressedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isConceptExpressedBy",
+      "@type" : "@id"
+    },
+    "isTimeIncludedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isTimeIncludedIn",
+      "@type" : "@id"
+    },
+    "includesAction" : {
+      "@id" : "https://w3id.org/def/dul-es#includesAction",
+      "@type" : "@id"
+    },
+    "hasEventDate" : {
+      "@id" : "https://w3id.org/def/dul-es#hasEventDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "realizesInformationAbout" : {
+      "@id" : "https://w3id.org/def/dul-es#realizesInformationAbout",
+      "@type" : "@id"
+    },
+    "FunctionalSubstance" : {
+      "@id" : "https://w3id.org/def/dul-es#FunctionalSubstance"
+    },
+    "hasRole" : {
+      "@id" : "https://w3id.org/def/dul-es#hasRole",
+      "@type" : "@id"
+    },
+    "Community" : {
+      "@id" : "https://w3id.org/def/dul-es#Community"
+    },
+    "SpaceRegion" : {
+      "@id" : "https://w3id.org/def/dul-es#SpaceRegion"
+    },
+    "hasDataValue" : {
+      "@id" : "https://w3id.org/def/dul-es#hasDataValue"
+    },
+    "concretelyExpresses" : {
+      "@id" : "https://w3id.org/def/dul-es#concretelyExpresses",
+      "@type" : "@id"
+    },
+    "isObjectIncludedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isObjectIncludedIn",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "PhysicalArtifact" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalArtifact"
+    },
+    "isPartOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isPartOf",
+      "@type" : "@id"
+    },
+    "characterizes" : {
+      "@id" : "https://w3id.org/def/dul-es#characterizes",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "https://w3id.org/def/dul-es#hasPart",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "https://w3id.org/def/dul-es#Concept"
+    },
+    "Contract" : {
+      "@id" : "https://w3id.org/def/dul-es#Contract"
+    },
+    "sameSettingAs" : {
+      "@id" : "https://w3id.org/def/dul-es#sameSettingAs",
+      "@type" : "@id"
+    },
+    "LocalConcept" : {
+      "@id" : "https://w3id.org/def/dul-es#LocalConcept"
+    },
+    "isConstituentOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isConstituentOf",
+      "@type" : "@id"
+    },
+    "usesConcept" : {
+      "@id" : "https://w3id.org/def/dul-es#usesConcept",
+      "@type" : "@id"
+    },
+    "isReferenceOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isReferenceOf",
+      "@type" : "@id"
+    },
+    "NaturalPerson" : {
+      "@id" : "https://w3id.org/def/dul-es#NaturalPerson"
+    },
+    "SocialObjectAttribute" : {
+      "@id" : "https://w3id.org/def/dul-es#SocialObjectAttribute"
+    },
+    "isConceptUsedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isConceptUsedIn",
+      "@type" : "@id"
+    },
+    "introduces" : {
+      "@id" : "https://w3id.org/def/dul-es#introduces",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/def/dul-es#Event"
+    },
+    "follows" : {
+      "@id" : "https://w3id.org/def/dul-es#follows",
+      "@type" : "@id"
+    },
+    "isTimeIntervalOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isTimeIntervalOf",
+      "@type" : "@id"
+    },
+    "actsThrough" : {
+      "@id" : "https://w3id.org/def/dul-es#actsThrough",
+      "@type" : "@id"
+    },
+    "overlaps" : {
+      "@id" : "https://w3id.org/def/dul-es#overlaps",
+      "@type" : "@id"
+    },
+    "hasIntervalDate" : {
+      "@id" : "https://w3id.org/def/dul-es#hasIntervalDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isConceptualizedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isConceptualizedBy",
+      "@type" : "@id"
+    },
+    "Personification" : {
+      "@id" : "https://w3id.org/def/dul-es#Personification"
+    },
+    "isMemberOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isMemberOf",
+      "@type" : "@id"
+    },
+    "EventType" : {
+      "@id" : "https://w3id.org/def/dul-es#EventType"
+    },
+    "defines" : {
+      "@id" : "https://w3id.org/def/dul-es#defines",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "https://w3id.org/def/dul-es#Person"
+    },
+    "PhysicalPlace" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalPlace"
+    },
+    "SocialPerson" : {
+      "@id" : "https://w3id.org/def/dul-es#SocialPerson"
+    },
+    "isUnifiedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isUnifiedBy",
+      "@type" : "@id"
+    },
+    "hasPostcondition" : {
+      "@id" : "https://w3id.org/def/dul-es#hasPostcondition",
+      "@type" : "@id"
+    },
+    "Relation" : {
+      "@id" : "https://w3id.org/def/dul-es#Relation"
+    },
+    "associatedWith" : {
+      "@id" : "https://w3id.org/def/dul-es#associatedWith",
+      "@type" : "@id"
+    },
+    "hasTask" : {
+      "@id" : "https://w3id.org/def/dul-es#hasTask",
+      "@type" : "@id"
+    },
+    "Quality" : {
+      "@id" : "https://w3id.org/def/dul-es#Quality"
+    },
+    "Agent" : {
+      "@id" : "https://w3id.org/def/dul-es#Agent"
+    },
+    "CollectiveAgent" : {
+      "@id" : "https://w3id.org/def/dul-es#CollectiveAgent"
+    },
+    "directlyFollows" : {
+      "@id" : "https://w3id.org/def/dul-es#directlyFollows",
+      "@type" : "@id"
+    },
+    "Pattern" : {
+      "@id" : "https://w3id.org/def/dul-es#Pattern"
+    },
+    "expresses" : {
+      "@id" : "https://w3id.org/def/dul-es#expresses",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "SocialRelation" : {
+      "@id" : "https://w3id.org/def/dul-es#SocialRelation"
+    },
+    "Role" : {
+      "@id" : "https://w3id.org/def/dul-es#Role"
+    },
+    "isIntroducedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isIntroducedBy",
+      "@type" : "@id"
+    },
+    "expressesConcept" : {
+      "@id" : "https://w3id.org/def/dul-es#expressesConcept",
+      "@type" : "@id"
+    },
+    "InformationEntity" : {
+      "@id" : "https://w3id.org/def/dul-es#InformationEntity"
+    },
+    "PlanExecution" : {
+      "@id" : "https://w3id.org/def/dul-es#PlanExecution"
+    },
+    "hasMember" : {
+      "@id" : "https://w3id.org/def/dul-es#hasMember",
+      "@type" : "@id"
+    },
+    "isComponentOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isComponentOf",
+      "@type" : "@id"
+    },
+    "TimeInterval" : {
+      "@id" : "https://w3id.org/def/dul-es#TimeInterval"
+    },
+    "isSpecializedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isSpecializedBy",
+      "@type" : "@id"
+    },
+    "isSuperordinatedTo" : {
+      "@id" : "https://w3id.org/def/dul-es#isSuperordinatedTo",
+      "@type" : "@id"
+    },
+    "isRoleOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isRoleOf",
+      "@type" : "@id"
+    },
+    "isAgentInvolvedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isAgentInvolvedIn",
+      "@type" : "@id"
+    },
+    "FormalEntity" : {
+      "@id" : "https://w3id.org/def/dul-es#FormalEntity"
+    },
+    "involvesAgent" : {
+      "@id" : "https://w3id.org/def/dul-es#involvesAgent",
+      "@type" : "@id"
+    },
+    "covers" : {
+      "@id" : "https://w3id.org/def/dul-es#covers",
+      "@type" : "@id"
+    },
+    "isExpandedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isExpandedIn",
+      "@type" : "@id"
+    },
+    "isAbout" : {
+      "@id" : "https://w3id.org/def/dul-es#isAbout",
+      "@type" : "@id"
+    },
+    "Description" : {
+      "@id" : "https://w3id.org/def/dul-es#Description"
+    },
+    "Method" : {
+      "@id" : "https://w3id.org/def/dul-es#Method"
+    },
+    "isParticipantIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isParticipantIn",
+      "@type" : "@id"
+    },
+    "definesTask" : {
+      "@id" : "https://w3id.org/def/dul-es#definesTask",
+      "@type" : "@id"
+    },
+    "isActionIncludedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isActionIncludedIn",
+      "@type" : "@id"
+    },
+    "SpatioTemporalRegion" : {
+      "@id" : "https://w3id.org/def/dul-es#SpatioTemporalRegion"
+    },
+    "includesObject" : {
+      "@id" : "https://w3id.org/def/dul-es#includesObject",
+      "@type" : "@id"
+    },
+    "PhysicalAttribute" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalAttribute"
+    },
+    "hasQuality" : {
+      "@id" : "https://w3id.org/def/dul-es#hasQuality",
+      "@type" : "@id"
+    },
+    "hasTimeInterval" : {
+      "@id" : "https://w3id.org/def/dul-es#hasTimeInterval",
+      "@type" : "@id"
+    },
+    "Goal" : {
+      "@id" : "https://w3id.org/def/dul-es#Goal"
+    },
+    "Plan" : {
+      "@id" : "https://w3id.org/def/dul-es#Plan"
+    },
+    "Place" : {
+      "@id" : "https://w3id.org/def/dul-es#Place"
+    },
+    "Abstract" : {
+      "@id" : "https://w3id.org/def/dul-es#Abstract"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Parameter" : {
+      "@id" : "https://w3id.org/def/dul-es#Parameter"
+    },
+    "hasCommonBoundary" : {
+      "@id" : "https://w3id.org/def/dul-es#hasCommonBoundary",
+      "@type" : "@id"
+    },
+    "Workflow" : {
+      "@id" : "https://w3id.org/def/dul-es#Workflow"
+    },
+    "classifies" : {
+      "@id" : "https://w3id.org/def/dul-es#classifies",
+      "@type" : "@id"
+    },
+    "coparticipatesWith" : {
+      "@id" : "https://w3id.org/def/dul-es#coparticipatesWith",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "https://w3id.org/def/dul-es#Project"
+    },
+    "hasConstraint" : {
+      "@id" : "https://w3id.org/def/dul-es#hasConstraint",
+      "@type" : "@id"
+    },
+    "Norm" : {
+      "@id" : "https://w3id.org/def/dul-es#Norm"
+    },
+    "PhysicalAgent" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalAgent"
+    },
+    "Classification" : {
+      "@id" : "https://w3id.org/def/dul-es#Classification"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Theory" : {
+      "@id" : "https://w3id.org/def/dul-es#Theory"
+    },
+    "hasParticipant" : {
+      "@id" : "https://w3id.org/def/dul-es#hasParticipant",
+      "@type" : "@id"
+    },
+    "DesignedSubstance" : {
+      "@id" : "https://w3id.org/def/dul-es#DesignedSubstance"
+    },
+    "isExpressedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isExpressedBy",
+      "@type" : "@id"
+    },
+    "nearTo" : {
+      "@id" : "https://w3id.org/def/dul-es#nearTo",
+      "@type" : "@id"
+    },
+    "BiologicalObject" : {
+      "@id" : "https://w3id.org/def/dul-es#BiologicalObject"
+    },
+    "isPreconditionOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isPreconditionOf",
+      "@type" : "@id"
+    },
+    "hasPrecondition" : {
+      "@id" : "https://w3id.org/def/dul-es#hasPrecondition",
+      "@type" : "@id"
+    },
+    "isRealizedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isRealizedBy",
+      "@type" : "@id"
+    },
+    "isObservableAt" : {
+      "@id" : "https://w3id.org/def/dul-es#isObservableAt",
+      "@type" : "@id"
+    },
+    "isCharacterizedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isCharacterizedBy",
+      "@type" : "@id"
+    },
+    "hasParameter" : {
+      "@id" : "https://w3id.org/def/dul-es#hasParameter",
+      "@type" : "@id"
+    },
+    "hasParameterDataValue" : {
+      "@id" : "https://w3id.org/def/dul-es#hasParameterDataValue"
+    },
+    "Entity" : {
+      "@id" : "https://w3id.org/def/dul-es#Entity"
+    },
+    "isRegionFor" : {
+      "@id" : "https://w3id.org/def/dul-es#isRegionFor",
+      "@type" : "@id"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/def/dul-es#Process"
+    },
+    "isQualityOf" : {
+      "@id" : "https://w3id.org/def/dul-es#isQualityOf",
+      "@type" : "@id"
+    },
+    "DesignedArtifact" : {
+      "@id" : "https://w3id.org/def/dul-es#DesignedArtifact"
+    },
+    "Collective" : {
+      "@id" : "https://w3id.org/def/dul-es#Collective"
+    },
+    "isRelatedToDescription" : {
+      "@id" : "https://w3id.org/def/dul-es#isRelatedToDescription",
+      "@type" : "@id"
+    },
+    "includesTime" : {
+      "@id" : "https://w3id.org/def/dul-es#includesTime",
+      "@type" : "@id"
+    },
+    "expands" : {
+      "@id" : "https://w3id.org/def/dul-es#expands",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isRoleDefinedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isRoleDefinedIn",
+      "@type" : "@id"
+    },
+    "directlyPrecedes" : {
+      "@id" : "https://w3id.org/def/dul-es#directlyPrecedes",
+      "@type" : "@id"
+    },
+    "Group" : {
+      "@id" : "https://w3id.org/def/dul-es#Group"
+    },
+    "isSubordinatedTo" : {
+      "@id" : "https://w3id.org/def/dul-es#isSubordinatedTo",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "hasSetting" : {
+      "@id" : "https://w3id.org/def/dul-es#hasSetting",
+      "@type" : "@id"
+    },
+    "definesRole" : {
+      "@id" : "https://w3id.org/def/dul-es#definesRole",
+      "@type" : "@id"
+    },
+    "isAgentIncludedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isAgentIncludedIn",
+      "@type" : "@id"
+    },
+    "hasComponent" : {
+      "@id" : "https://w3id.org/def/dul-es#hasComponent",
+      "@type" : "@id"
+    },
+    "isEventIncludedIn" : {
+      "@id" : "https://w3id.org/def/dul-es#isEventIncludedIn",
+      "@type" : "@id"
+    },
+    "Right" : {
+      "@id" : "https://w3id.org/def/dul-es#Right"
+    },
+    "actsFor" : {
+      "@id" : "https://w3id.org/def/dul-es#actsFor",
+      "@type" : "@id"
+    },
+    "isConstraintFor" : {
+      "@id" : "https://w3id.org/def/dul-es#isConstraintFor",
+      "@type" : "@id"
+    },
+    "hasRegion" : {
+      "@id" : "https://w3id.org/def/dul-es#hasRegion",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "https://w3id.org/def/dul-es#Action"
+    },
+    "conceptualizes" : {
+      "@id" : "https://w3id.org/def/dul-es#conceptualizes",
+      "@type" : "@id"
+    },
+    "Configuration" : {
+      "@id" : "https://w3id.org/def/dul-es#Configuration"
+    },
+    "isSatisfiedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isSatisfiedBy",
+      "@type" : "@id"
+    },
+    "hasLocation" : {
+      "@id" : "https://w3id.org/def/dul-es#hasLocation",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "https://w3id.org/def/dul-es#Region"
+    },
+    "executesTask" : {
+      "@id" : "https://w3id.org/def/dul-es#executesTask",
+      "@type" : "@id"
+    },
+    "Task" : {
+      "@id" : "https://w3id.org/def/dul-es#Task"
+    },
+    "Substance" : {
+      "@id" : "https://w3id.org/def/dul-es#Substance"
+    },
+    "isParameterFor" : {
+      "@id" : "https://w3id.org/def/dul-es#isParameterFor",
+      "@type" : "@id"
+    },
+    "isCoveredBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isCoveredBy",
+      "@type" : "@id"
+    },
+    "PhysicalObject" : {
+      "@id" : "https://w3id.org/def/dul-es#PhysicalObject"
+    },
+    "isDescribedBy" : {
+      "@id" : "https://w3id.org/def/dul-es#isDescribedBy",
+      "@type" : "@id"
+    },
+    "realizes" : {
+      "@id" : "https://w3id.org/def/dul-es#realizes",
+      "@type" : "@id"
+    },
+    "Narrative" : {
+      "@id" : "https://w3id.org/def/dul-es#Narrative"
+    },
+    "Set" : {
+      "@id" : "https://w3id.org/def/dul-es#Set"
+    },
+    "Collection" : {
+      "@id" : "https://w3id.org/def/dul-es#Collection"
+    },
+    "ChemicalObject" : {
+      "@id" : "https://w3id.org/def/dul-es#ChemicalObject"
+    },
+    "satisfies" : {
+      "@id" : "https://w3id.org/def/dul-es#satisfies",
+      "@type" : "@id"
+    }
+  }
+}
